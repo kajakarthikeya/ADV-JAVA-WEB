@@ -1,0 +1,223 @@
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.nav-header {
+    padding: 25px 20px;
+    border-bottom: 2px solid #34495e;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-header h3 {
+    color: #ecf0f1;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.nav-items {
+    padding: 20px 0;
+}
+
+.nav-item {
+    display: block;
+    padding: 15px 25px;
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover {
+    background: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+    border-left-color: #3498db;
+    transform: translateX(5px);
+}
+
+.nav-item.active {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border-left-color: #2ecc71;
+}
+
+/* Custom Scrollbar for Side Nav */
+.side-nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.side-nav::-webkit-scrollbar-track {
+    background: #34495e;
+}
+
+.side-nav::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 3px;
+}
+
+.side-nav::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Custom Scrollbar for Main Content */
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Code Syntax Highlighting */
+.code-container code .keyword {
+    color: #ff7b72;
+}
+
+.code-container code .string {
+    color: #a5d6ff;
+}
+
+.code-container code .comment {
+    color: #8b949e;
+    font-style: italic;
+}
+
+.code-container code .number {
+    color: #79c0ff;
+}
+
+.code-container code .class-name {
+    color: #ffa657;
+}
+
+/* MySQL Specific Styles */
+.mysql-setup {
+    border-left-color: #f39c12 !important;
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+}
+
+.sql-commands {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sql-command {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid #e67e22;
+}
+
+.sql-command strong {
+    color: #d35400;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.sql-command code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.remote-info {
+    border-left-color: #9b59b6 !important;
+    background: linear-gradient(135deg, #f4f1ff, #e8d5ff);
+}
+
+.remote-info ul li {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-left: 3px solid #8e44ad;
+}
+
+.remote-info strong {
+    color: #6c3483;
+}
+
+/* Enhanced Info Box Links */
+.info-box a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-box a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Step Card Variations */
+.step-card:nth-child(odd) {
+    border-left-color: #e74c3c;
+}
+
+.step-card:nth-child(even) {
+    border-left-color: #2ecc71;
+}
+
+.step-card:nth-child(3n) {
+    border-left-color: #f39c12;
+}
+
+.step-card:nth-child(5n) {
+    border-left-color: #9b59b6;
+}
+
+.step-card:nth-child(7n) {
+    border-left-color: #1abc9c;
+}
+
+.step-card:nth-child(8n) {
+    border-left-color: #34495e;
+}
+
+.step-card:nth-child(9n) {
+    border-left-color: #e67e22;
+}
+
+.step-card:nth-child(10n) {
+    border-left-color: #16a085;
+}
+
+.step-card:nth-child(11n) {
+    border-left-color: #d35400;
+}
+
+.step-card:nth-child(12n) {
+    border-left-color: #c0392b;
+}
+
+/* CRUD Operations Specific Styles */
+.crud-aim {
+    background: linear-gradient(

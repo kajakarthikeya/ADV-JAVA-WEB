@@ -1,0 +1,4000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Java Lab Record</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-content">
+            <h1>ADVANCED JAVA</h1>
+            <p class="roll-number">Roll Number: 238W1A1275</p>
+            <div class="profile-section">
+                <div class="profile-icon" onclick="var d = document.getElementById('profileDropdown'); d.style.display = d.style.display === 'block' ? 'none' : 'block';">
+                    <img src="profile.jpeg" alt="Profile" class="profile-img">
+                </div>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-close" onclick="document.getElementById('profileDropdown').style.display = 'none';">×</div>
+                    <div class="profile-header">
+                        <img src="profile.jpeg" alt="Profile" class="profile-header-img">
+                        <div class="profile-info">
+                            <h3>Bobbadi Bhanu</h3>
+                            <p>238W1A1275</p>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">9876543210</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">abc@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Navigation Bar -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h3>Lab Contents</h3>
+        </div>
+        <div class="nav-items">
+            <a href="#introduction" class="nav-item">Introduction</a>
+            <a href="#java-msaccess" class="nav-item">Java & MS Access Connection</a>
+            <a href="#jdbc-mysql" class="nav-item">JDBC MySQL Connection</a>
+            <a href="#crud-operations" class="nav-item">CRUD Operations</a>
+            <a href="#jdbc-odbc-bridge" class="nav-item">JDBC-ODBC Bridge</a>
+            <a href="#servlets" class="nav-item">Java Servlets</a>
+            <a href="#cookies-sessions" class="nav-item">Cookies & Sessions</a>
+            <a href="#spring-boot" class="nav-item">Spring Boot Framework</a>
+            <a href="#jdbc-mysql-spring" class="nav-item">JDBC with MySQL</a>
+            <a href="#spring-jpa-h2" class="nav-item">Spring JPA with H2</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h2>Welcome to Advanced Java Lab Record</h2>
+            <p>Explore the comprehensive guide to Advanced Java concepts and technologies.</p>
+            
+            <!-- Introduction Section -->
+            <section id="introduction" class="lab-section">
+                <h3>🚀 Introduction to Advanced Java</h3>
+                
+                <div class="topic-grid">
+                    <!-- Topic 1 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Core Java vs Advanced Java</h4>
+                            <span class="topic-icon">☕</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Core Java</h5>
+                                    <ul>
+                                        <li>Basic syntax and OOP concepts</li>
+                                        <li>Data types, variables, operators</li>
+                                        <li>Control structures and methods</li>
+                                        <li>Exception handling</li>
+                                        <li>Collections framework</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Advanced Java</h5>
+                                    <ul>
+                                        <li>Web development (Servlets, JSP)</li>
+                                        <li>Database connectivity (JDBC)</li>
+                                        <li>Enterprise applications (EJB)</li>
+                                        <li>Frameworks (Spring, Hibernate)</li>
+                                        <li>Web services and APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 2 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Java Applets Features</h4>
+                            <span class="topic-icon">🖥️</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <strong>Platform Independent:</strong> Runs on any browser with JVM
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Secure:</strong> Runs in sandbox environment with restricted access
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Interactive:</strong> Provides rich GUI components and event handling
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Dynamic:</strong> Can be updated without recompiling the entire application
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Portable:</strong> Write once, run anywhere capability
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 3 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Java Servlets Key Features</h4>
+                            <span class="topic-icon">🌐</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <strong>Server-side Processing:</strong> Handles client requests on the server
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Protocol Independent:</strong> Can handle HTTP, FTP, SMTP protocols
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Persistent:</strong> Remains in memory until explicitly destroyed
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Efficient:</strong> Multithreaded architecture for better performance
+                                </div>
+                                <div class="feature-item">
+                                    <strong>Robust:</strong> Built-in memory management and exception handling
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 4 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Applets vs Servlets</h4>
+                            <span class="topic-icon">⚖️</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Applets</h5>
+                                    <ul>
+                                        <li>Client-side execution</li>
+                                        <li>Runs in web browser</li>
+                                        <li>GUI-based applications</li>
+                                        <li>Limited security access</li>
+                                        <li>Requires JVM on client</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Servlets</h5>
+                                    <ul>
+                                        <li>Server-side execution</li>
+                                        <li>Runs on web server</li>
+                                        <li>Web-based applications</li>
+                                        <li>Full server access</li>
+                                        <li>No client-side requirements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 5 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Java's Major Features</h4>
+                            <span class="topic-icon">⭐</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="feature-grid">
+                                <div class="feature-box">
+                                    <h6>Platform Independent</h6>
+                                    <p>Write once, run anywhere</p>
+                                </div>
+                                <div class="feature-box">
+                                    <h6>Object-Oriented</h6>
+                                    <p>Encapsulation, Inheritance, Polymorphism</p>
+                                </div>
+                                <div class="feature-box">
+                                    <h6>Secure</h6>
+                                    <p>No explicit pointers, bytecode verification</p>
+                                </div>
+                                <div class="feature-box">
+                                    <h6>Multithreaded</h6>
+                                    <p>Concurrent execution support</p>
+                                </div>
+                                <div class="feature-box">
+                                    <h6>Robust</h6>
+                                    <p>Strong memory management</p>
+                                </div>
+                                <div class="feature-box">
+                                    <h6>High Performance</h6>
+                                    <p>JIT compiler optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 6 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>JDBC and ODBC Role</h4>
+                            <span class="topic-icon">🗄️</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="role-description">
+                                <div class="role-item">
+                                    <h5>JDBC (Java Database Connectivity)</h5>
+                                    <p>Provides a standard API for Java applications to connect and interact with databases. Enables database-independent programming through driver management and SQL execution.</p>
+                                </div>
+                                <div class="role-item">
+                                    <h5>ODBC (Open Database Connectivity)</h5>
+                                    <p>Microsoft's standard API for accessing database management systems. Provides a common interface for applications to access different database systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 7 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>ODBC vs JDBC</h4>
+                            <span class="topic-icon">🔄</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>ODBC</h5>
+                                    <ul>
+                                        <li>Language independent</li>
+                                        <li>Platform dependent (mainly Windows)</li>
+                                        <li>Uses C/C++ interface</li>
+                                        <li>Requires client-side installation</li>
+                                        <li>Older technology</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>JDBC</h5>
+                                    <ul>
+                                        <li>Java specific</li>
+                                        <li>Platform independent</li>
+                                        <li>Pure Java interface</li>
+                                        <li>No client-side installation needed</li>
+                                        <li>Modern, object-oriented</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 8 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Cookies vs Sessions</h4>
+                            <span class="topic-icon">🍪</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Cookies</h5>
+                                    <ul>
+                                        <li>Stored on client-side</li>
+                                        <li>Limited storage (4KB)</li>
+                                        <li>Persistent across sessions</li>
+                                        <li>Can be disabled by user</li>
+                                        <li>Less secure</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Sessions</h5>
+                                    <ul>
+                                        <li>Stored on server-side</li>
+                                        <li>Unlimited storage</li>
+                                        <li>Temporary (session lifetime)</li>
+                                        <li>Cannot be disabled</li>
+                                        <li>More secure</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 9 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Spring Boot vs Traditional Spring</h4>
+                            <span class="topic-icon">🌱</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Traditional Spring</h5>
+                                    <ul>
+                                        <li>Complex XML configuration</li>
+                                        <li>Manual dependency management</li>
+                                        <li>Requires external server setup</li>
+                                        <li>More boilerplate code</li>
+                                        <li>Longer development time</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Spring Boot</h5>
+                                    <ul>
+                                        <li>Auto-configuration</li>
+                                        <li>Embedded servers</li>
+                                        <li>Starter dependencies</li>
+                                        <li>Minimal configuration</li>
+                                        <li>Rapid development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 10 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Standalone vs Web Applications</h4>
+                            <span class="topic-icon">💻</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Standalone Applications</h5>
+                                    <ul>
+                                        <li>Desktop-based applications</li>
+                                        <li>Direct OS interaction</li>
+                                        <li>No network dependency</li>
+                                        <li>Platform-specific installation</li>
+                                        <li>Rich user interface</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Web Applications</h5>
+                                    <ul>
+                                        <li>Browser-based applications</li>
+                                        <li>Server-client architecture</li>
+                                        <li>Network dependent</li>
+                                        <li>Platform independent access</li>
+                                        <li>HTML/CSS/JS interface</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 11 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Web Application Requirements</h4>
+                            <span class="topic-icon">🔧</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="requirements-grid">
+                                <div class="req-item">
+                                    <h6>Web Server</h6>
+                                    <p>Apache Tomcat, Jetty, or similar</p>
+                                </div>
+                                <div class="req-item">
+                                    <h6>JVM</h6>
+                                    <p>Java Runtime Environment</p>
+                                </div>
+                                <div class="req-item">
+                                    <h6>Web Browser</h6>
+                                    <p>Client-side interface</p>
+                                </div>
+                                <div class="req-item">
+                                    <h6>HTTP Protocol</h6>
+                                    <p>Communication standard</p>
+                                </div>
+                                <div class="req-item">
+                                    <h6>Database</h6>
+                                    <p>Data storage (MySQL, PostgreSQL)</p>
+                                </div>
+                                <div class="req-item">
+                                    <h6>Network Connection</h6>
+                                    <p>Internet/Intranet connectivity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Java & MS Access Connection Section -->
+            <section id="java-msaccess" class="lab-section">
+                <h3>🔗 Java & MS Access Connections without DSN</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn how to establish a connection between Java and MS Access database without using DSN (Data Source Name). This method uses UCanAccess driver for direct database connectivity.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create a New Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Open your IDE and create a new Java project to start working with Java and MS Access connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image1.png" alt="Creating New Project" class="step-image">
+                                    <div class="image-caption">Creating a new Java project in IDE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Select Java for Standalone Applications</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Choose the "Java" option for a standalone application to ensure it runs independently on your system.</p>
+                                <div class="image-container">
+                                    <img src="images/image2.png" alt="Selecting Java Application" class="step-image">
+                                    <div class="image-caption">Selecting Java for standalone applications</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Name of the Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Give a meaningful name to your project for easy identification (e.g., JavaAccessConnection).</p>
+                                <div class="image-container">
+                                    <img src="images/image3.png" alt="Naming the Project" class="step-image">
+                                    <div class="image-caption">Providing a meaningful project name</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Project Page Displayed</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Once the project is created, the IDE displays the project structure including source folders, libraries, and other components.</p>
+                                <div class="image-container">
+                                    <img src="images/image4.png" alt="Project Structure" class="step-image">
+                                    <div class="image-caption">Project structure with folders and components</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Right-click on Libraries in the project tree and add the necessary JAR files (like UCanAccess or jdbc-odbc driver) to enable MS Access connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image5.png" alt="Adding Libraries" class="step-image">
+                                    <div class="image-caption">Adding UCanAccess JAR files to project libraries</div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📚 Required Libraries:</h5>
+                                    <ul>
+                                        <li>UCanAccess-5.0.1.jar</li>
+                                        <li>commons-lang3-3.8.1.jar</li>
+                                        <li>commons-logging-1.2.jar</li>
+                                        <li>hsqldb-2.5.0.jar</li>
+                                        <li>jackcess-3.0.1.jar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Run the Program</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Create and execute the Java program to establish connection with MS Access database.</p>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package Test;
+import java.sql.*;
+import java.util.*;
+
+public class Test {
+    public static void main(String args[]) {
+        try {
+            // Load UCanAccess JDBC Driver
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+            
+            // Establish connection to MS Access database
+            Connection con = DriverManager.getConnection(
+                "jdbc:ucanaccess://D:\\vrsec.accdb"
+            );
+            
+            // Create statement object
+            Statement st = con.createStatement();
+            
+            // Execute query to fetch data from 'it' table
+            ResultSet rs = st.executeQuery("select * from it");
+            
+            // Process the result set
+            while(rs.next()) {
+                System.out.println("emp Number is: " + rs.getInt(1));
+                System.out.println("emp name is: " + rs.getString(2));
+            }
+            
+            // Close connections
+            rs.close();
+            st.close();
+            con.close();
+            
+        } catch(Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <p>Click the green Run button to compile and execute the program. The output will show whether the connection to MS Access was successful.</p>
+                                
+                                <div class="image-container">
+                                    <img src="images/image6.png" alt="Program Execution" class="step-image">
+                                    <div class="image-caption">Program execution and output display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>Code executed successfully and the result displayed employee numbers and names from the MS Access database table.</p>
+                                <div class="success-message">
+                                    <strong>Connection Established Successfully!</strong><br>
+                                    The Java application successfully connected to MS Access database without DSN and retrieved data from the 'it' table.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JDBC MySQL Connection Section -->
+            <section id="jdbc-mysql" class="lab-section">
+                <h3>🔗 JDBC MySQL Connection</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn how to establish JDBC connection with MySQL database for both local and remote servers. This tutorial covers complete setup and implementation of Java-MySQL connectivity.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create a New Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Open your IDE and create a new Java project to work with MySQL database connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image7.png" alt="Creating New MySQL Project" class="step-image">
+                                    <div class="image-caption">Creating a new Java project for MySQL connectivity</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Select Java for Standalone Applications</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Choose "Java" for a standalone application so the program runs independently on your system.</p>
+                                <div class="image-container">
+                                    <img src="images/image8.png" alt="Selecting Java Application" class="step-image">
+                                    <div class="image-caption">Selecting Java for standalone application</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Name the Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Provide a meaningful project name (e.g., JdbcMysqlConnection) for easy identification.</p>
+                                <div class="image-container">
+                                    <img src="images/image9.png" alt="Naming MySQL Project" class="step-image">
+                                    <div class="image-caption">Providing meaningful project name</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Project Page Displayed</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>After creating the project, the IDE displays the project structure with source folders, libraries, and other components.</p>
+                                <div class="image-container">
+                                    <img src="images/image10.png" alt="MySQL Project Structure" class="step-image">
+                                    <div class="image-caption">Project structure with folders and components</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Right-click on Libraries in the project tree and add the MySQL JDBC driver (JAR file) to enable Java-MySQL connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image11.png" alt="Adding MySQL Libraries" class="step-image">
+                                    <div class="image-caption">Adding MySQL JDBC driver to project libraries</div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📚 Required MySQL JDBC Driver:</h5>
+                                    <ul>
+                                        <li>mysql-connector-java-8.0.x.jar (Latest version)</li>
+                                        <li>Download from: <a href="https://dev.mysql.com/downloads/connector/j/" target="_blank">MySQL Official Site</a></li>
+                                        <li>Alternative: mysql-connector-java-5.1.x.jar (Legacy)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Write Program to Fetch Data from MySQL Database</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Create a Java class and write the following program to connect to the MySQL database and retrieve data:</p>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Local MySQL Connection Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package mysql;
+import java.sql.*;
+import java.util.*;
+
+public class Mysql {
+    public static void main(String[] args) {
+        try {
+            // Load MySQL JDBC Driver
+            Class.forName("com.mysql.jdbc.Driver");
+            
+            // Establish connection to local MySQL database
+            Connection con = DriverManager.getConnection(
+                "jdbc:mysql://localhost/mydb", "root", ""
+            );
+            
+            // Create statement object
+            Statement st = con.createStatement();
+            
+            // Execute query to fetch data from student table
+            ResultSet rs = st.executeQuery("select * from student");
+            
+            // Process the result set
+            while(rs.next()) {
+                System.out.println(rs.getString(1) + "  " + rs.getString(2));
+            }
+            
+            // Close connection
+            con.close();
+            
+        } catch(Exception e) {
+            System.out.println("Error: " + e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">7</div>
+                                <h4>Create Database and Table</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="info-box mysql-setup">
+                                    <h5>🗄️ MySQL Database Setup:</h5>
+                                    <div class="sql-commands">
+                                        <div class="sql-command">
+                                            <strong>Create Database:</strong>
+                                            <code>CREATE DATABASE mydb;</code>
+                                        </div>
+                                        <div class="sql-command">
+                                            <strong>Use Database:</strong>
+                                            <code>USE mydb;</code>
+                                        </div>
+                                        <div class="sql-command">
+                                            <strong>Create Table:</strong>
+                                            <code>CREATE TABLE student (id INT, name VARCHAR(50));</code>
+                                        </div>
+                                        <div class="sql-command">
+                                            <strong>Insert Sample Data:</strong>
+                                            <code>INSERT INTO student VALUES (1, 'John'), (2, 'Alice');</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image12.png" alt="Database Setup" class="step-image">
+                                    <div class="image-caption">Creating database and table in MySQL</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">8</div>
+                                <h4>Run the Program</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Click the Run button in your IDE. The output should display the data present in the student table.</p>
+                                <div class="image-container">
+                                    <img src="images/image13.png" alt="Local MySQL Output" class="step-image">
+                                    <div class="image-caption">Program execution showing local MySQL data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">9</div>
+                                <h4>Fetch Data from Remote MySQL Server</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Modify the connection string to connect to a remote server:</p>
+                                
+                                <div class="code-section">
+                                    <h5>🌐 Remote MySQL Connection Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package mysql;
+import java.sql.*;
+import java.util.*;
+
+public class Mysql {
+    public static void main(String[] args) {
+        try {
+            // Load MySQL JDBC Driver
+            Class.forName("com.mysql.jdbc.Driver");
+            
+            // Establish connection to remote MySQL database
+            Connection con = DriverManager.getConnection(
+                "jdbc:mysql://10.0.9.12:3306/it2", "root", ""
+            );
+            
+            // Create statement object
+            Statement st = con.createStatement();
+            
+            // Execute query to fetch data from student table
+            ResultSet rs = st.executeQuery("select * from student");
+            
+            // Process the result set
+            while(rs.next()) {
+                System.out.println(rs.getInt(1) + "  " + rs.getString(2));
+            }
+            
+            // Close connection
+            con.close();
+            
+        } catch(Exception e) {
+            System.out.println("Error: " + e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-box remote-info">
+                                    <h5>🌐 Remote Connection Parameters:</h5>
+                                    <ul>
+                                        <li><strong>Server IP:</strong> 10.0.9.12</li>
+                                        <li><strong>Port:</strong> 3306 (Default MySQL port)</li>
+                                        <li><strong>Database:</strong> it2</li>
+                                        <li><strong>Username:</strong> root</li>
+                                        <li><strong>Password:</strong> (empty in this example)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">10</div>
+                                <h4>Run Program for Remote Server</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Execute the program. The output will display the data from the student table on the remote MySQL server.</p>
+                                <div class="image-container">
+                                    <img src="images/image14.png" alt="Remote MySQL Output" class="step-image">
+                                    <div class="image-caption">Program execution showing remote MySQL server data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>The code for both the local and the remote server executed successfully and the result is being displayed.</p>
+                                <div class="success-message">
+                                    <strong>JDBC MySQL Connection Successful!</strong><br>
+                                    ✓ Local MySQL database connection established<br>
+                                    ✓ Remote MySQL server connection established<br>
+                                    ✓ Data retrieved successfully from both servers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRUD Operations Section -->
+            <section id="crud-operations" class="lab-section">
+                <h3>📊 CRUD Operations with MySQL</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to implement complete CRUD (Create, Read, Update, Delete) operations on MySQL tables using Java applications. This comprehensive tutorial covers Statement, PreparedStatement, and CallableStatement implementations.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To implement the following CRUD operations on tables using MySQL and accessing the created database and tables using drivers and localhost using Java applications.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Initial Setup -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Project Setup</h4>
+                            </div>
+                            <div class="step-content">
+                                <ul class="setup-list">
+                                    <li>Open your IDE and create a new Java project</li>
+                                    <li>Select Java Standalone Application</li>
+                                    <li>Provide a meaningful project name (e.g., JDBC_Crud_Week4)</li>
+                                    <li>The project page will be displayed with source folders, libraries, and configuration options</li>
+                                    <li>Right-click Libraries and add the required MySQL JDBC driver to enable database connectivity</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- Program 1 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 1</span>
+                                <h4>CRUD Operations on Student Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Insert, display, update, and delete records in the student table.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ Database Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE DATABASE 238w1a1275;
+USE 238w1a1275;
+CREATE TABLE student (
+    rollno INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image15.png" alt="Student Table Setup" class="step-image">
+                                    <div class="image-caption">Creating student table in MySQL</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+            
+            // INSERT Operation
+            stmt.executeUpdate("INSERT INTO student VALUES (1, 'Alice', 85.5)");
+            System.out.println("Record inserted.");
+            
+            // SELECT Operation
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+            System.out.println("\nRollNo\tName\tMarks");
+            while (rs.next()) {
+                System.out.println(rs.getInt(1) + "\t" +
+                                   rs.getString(2) + "\t" +
+                                   rs.getDouble(3));
+            }
+            
+            // UPDATE Operation
+            stmt.executeUpdate("UPDATE student SET marks = 90 WHERE rollno = 1");
+            System.out.println("Record updated.");
+            
+            // DELETE Operation
+            stmt.executeUpdate("DELETE FROM student WHERE rollno = 1");
+            System.out.println("Record deleted.");
+            
+            rs.close();
+            stmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image16.png" alt="Student CRUD Output" class="step-image">
+                                    <div class="image-caption">Output showing CRUD operations on student table</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 2 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 2</span>
+                                <h4>Insert Data Using CallableStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Insert data into Person table using stored procedure.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Person (
+    PersonID INT PRIMARY KEY,
+    FirstName VARCHAR(255),
+    City VARCHAR(255)
+);
+
+DELIMITER $$
+CREATE PROCEDURE insert_person(
+    IN pid INT,
+    IN fname VARCHAR(255),
+    IN cityname VARCHAR(255)
+)
+BEGIN
+    INSERT INTO Person (PersonID, FirstName, City)
+    VALUES (pid, fname, cityname);
+END $$
+DELIMITER ;</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image17.png" alt="Person Table Setup" class="step-image">
+                                    <div class="image-caption">Creating Person table and stored procedure</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            // CallableStatement for stored procedure
+            CallableStatement cstmt = con.prepareCall("{call insert_person(?, ?, ?)}");
+            cstmt.setInt(1, 1);
+            cstmt.setString(2, "John");
+            cstmt.setString(3, "New York");
+            
+            int rowsInserted = cstmt.executeUpdate();
+            System.out.println(rowsInserted + " record(s) inserted.");
+            
+            // Display inserted data
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Person");
+            System.out.println("\nPersonID\tFirstName\tCity");
+            while (rs.next()) {
+                System.out.println(rs.getInt("PersonID") + "\t\t" +
+                                   rs.getString("FirstName") + "\t\t" +
+                                   rs.getString("City"));
+            }
+            
+            rs.close();
+            stmt.close();
+            cstmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image18.png" alt="CallableStatement Output" class="step-image">
+                                    <div class="image-caption">Output showing CallableStatement execution</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 3 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 3</span>
+                                <h4>Select Employees With Salary > X Using PreparedStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE employee (
+    empno INT PRIMARY KEY,
+    ename VARCHAR(50),
+    salary DOUBLE
+);
+
+INSERT INTO employee VALUES
+(101, 'Alice', 50000),
+(102, 'Bob', 60000),
+(103, 'Charlie', 45000);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image19.png" alt="Employee Table Setup" class="step-image">
+                                    <div class="image-caption">Creating and populating employee table</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+import java.util.Scanner;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter salary value X: ");
+            double x = sc.nextDouble();
+            
+            String query = "SELECT empno, ename, salary FROM employee WHERE salary > ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setDouble(1, x);
+            
+            ResultSet rs2 = pstmt.executeQuery();
+            System.out.println("\nSerial\tEmpNo\tName\tSalary");
+            int serial = 1;
+            while (rs2.next()) {
+                System.out.println(serial++ + "\t" +
+                                   rs2.getInt("empno") + "\t" +
+                                   rs2.getString("ename") + "\t" +
+                                   rs2.getDouble("salary"));
+            }
+            
+            rs2.close();
+            pstmt.close();
+            con.close();
+            sc.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image20.png" alt="PreparedStatement Output" class="step-image">
+                                    <div class="image-caption">Output showing filtered employee records</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 4 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 4</span>
+                                <h4>Insert and Display Data From Product Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE product (
+    serial_no INT PRIMARY KEY,
+    product_no INT,
+    product_name VARCHAR(255),
+    price DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            String insertQuery = "INSERT INTO product (serial_no, product_no, product_name, price) VALUES (?, ?, ?, ?)";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            
+            // Insert multiple products
+            pstmt.setInt(1, 1); pstmt.setInt(2, 101); pstmt.setString(3, "Laptop"); pstmt.setDouble(4, 55000);
+            pstmt.executeUpdate();
+            
+            pstmt.setInt(1, 2); pstmt.setInt(2, 102); pstmt.setString(3, "Mobile"); pstmt.setDouble(4, 15000);
+            pstmt.executeUpdate();
+            
+            pstmt.setInt(1, 3); pstmt.setInt(2, 103); pstmt.setString(3, "Tablet"); pstmt.setDouble(4, 25000);
+            pstmt.executeUpdate();
+            
+            System.out.println("Records inserted successfully.\n");
+            
+            // Display all products
+            String selectQuery = "SELECT * FROM product";
+            PreparedStatement selectStmt = con.prepareStatement(selectQuery);
+            ResultSet rs = selectStmt.executeQuery();
+            
+            System.out.println("SerialNo\tProductNo\tProductName\tPrice");
+            System.out.println("-------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("product_no") + "\t\t" +
+                                   rs.getString("product_name") + "\t\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            rs.close();
+            pstmt.close();
+            selectStmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image21.png" alt="Product Table Output" class="step-image">
+                                    <div class="image-caption">Output showing product table data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 5 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 5</span>
+                                <h4>Delete Department Using CallableStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(255),
+    city VARCHAR(255)
+);
+
+INSERT INTO Department VALUES
+(1, 'HR', 'New York'),
+(2, 'Finance', 'London'),
+(3, 'IT', 'Sydney');
+
+DELIMITER //
+CREATE PROCEDURE delete_department(IN deptId INT)
+BEGIN
+    DELETE FROM Department WHERE dept_id = deptId;
+END //
+DELIMITER ;</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            CallableStatement cstmt = con.prepareCall("{call delete_department(?)}");
+            cstmt.setInt(1, 2); // Department ID to delete
+            int rowsDeleted = cstmt.executeUpdate();
+            System.out.println(rowsDeleted + " department(s) deleted.");
+            
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Department");
+            System.out.println("\nDeptID\tDeptName\tCity");
+            System.out.println("----------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("dept_id") + "\t" +
+                                   rs.getString("dept_name") + "\t" +
+                                   rs.getString("city"));
+            }
+            
+            rs.close();
+            stmt.close();
+            cstmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image23.png" alt="Department Delete Output" class="step-image">
+                                    <div class="image-caption">Output showing department deletion</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 6 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 6</span>
+                                <h4>CRUD Operations on Books Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Inserts, reads, updates, and deletes records from Books table using Statement.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Books (
+    serial_no INT PRIMARY KEY,
+    book_no INT,
+    book_name VARCHAR(255),
+    price DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+            
+            // INSERT Operation
+            stmt.executeUpdate("INSERT INTO Books VALUES (3, 103, 'Data Structures', 450.0)");
+            System.out.println("Record inserted.");
+            
+            // SELECT Operation
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Books");
+            System.out.println("\nSerialNo\tBookNo\tBookName\t\tPrice");
+            System.out.println("---------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("book_no") + "\t" +
+                                   rs.getString("book_name") + "\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            // UPDATE Operation
+            stmt.executeUpdate("UPDATE Books SET price = 550.0 WHERE serial_no = 1");
+            System.out.println("\nRecord updated.");
+            
+            // DELETE Operation
+            stmt.executeUpdate("DELETE FROM Books WHERE serial_no = 2");
+            System.out.println("Record deleted.");
+            
+            // Final SELECT
+            rs = stmt.executeQuery("SELECT * FROM Books");
+            System.out.println("\nFinal Table:");
+            System.out.println("SerialNo\tBookNo\tBookName\t\tPrice");
+            System.out.println("---------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("book_no") + "\t" +
+                                   rs.getString("book_name") + "\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            rs.close();
+            stmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Final Result -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <div class="image-container">
+                                    <img src="images/image24.png" alt="All Programs Success" class="step-image">
+                                    <div class="image-caption">All CRUD programs executed successfully</div>
+                                </div>
+                                <div class="success-message">
+                                    <strong>All CRUD Operations Completed Successfully!</strong><br>
+                                    ✓ Statement-based CRUD operations<br>
+                                    ✓ PreparedStatement implementations<br>
+                                    ✓ CallableStatement with stored procedures<br>
+                                    ✓ Multiple table operations<br>
+                                    ✓ Complete database connectivity demonstrated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JDBC-ODBC Bridge Section -->
+            <section id="jdbc-odbc-bridge" class="lab-section">
+                <h3>🌉 JDBC-ODBC Bridge with DSN</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to connect Java with MS Access using JDBC-ODBC Bridge with DSN (Data Source Name) configuration. This tutorial covers complete setup and implementation of Java-Access connectivity using ODBC drivers.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To connect Java with MS Access using JDBC-ODBC Bridge (with DSN), and perform operations using Statement and ResultSet.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create a New Project in NetBeans</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Open NetBeans IDE</li>
+                                    <li>Go to File → New Project → Java → Java Application → Next</li>
+                                    <li>Name the project (e.g., JDBC_Access_Week5) and click Finish</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image25.png" alt="NetBeans Project Creation" class="step-image">
+                                    <div class="image-caption">Creating new Java project in NetBeans IDE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Set Up MS Access Database and DSN</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="substep-container">
+                                    <div class="substep">
+                                        <h5>🗄️ Create MS Access Database:</h5>
+                                        <ul class="substep-list">
+                                            <li>Open MS Access and create a database, e.g., StudentDB.accdb</li>
+                                            <li>Create a table <strong>student</strong> with fields:</li>
+                                            <li class="field-item">RollNo INT</li>
+                                            <li class="field-item">Name VARCHAR</li>
+                                            <li class="field-item">Marks DOUBLE</li>
+                                            <li>Save the database</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="image-container">
+                                    <img src="images/image26.png" alt="MS Access Database Setup" class="step-image">
+                                    <div class="image-caption">Creating MS Access database and student table</div>
+                                </div>
+
+                                <div class="dsn-setup">
+                                    <h5>🔗 Configure ODBC Data Source (DSN):</h5>
+                                    <div class="dsn-steps">
+                                        <div class="dsn-step">
+                                            <strong>Step 1:</strong> Open ODBC Data Source Administrator in Windows
+                                        </div>
+                                        <div class="dsn-step">
+                                            <strong>Step 2:</strong> Go to System DSN → Add → Microsoft Access Driver → Finish
+                                        </div>
+                                        <div class="dsn-step">
+                                            <strong>Step 3:</strong> Give a name to your DSN, e.g., <code>StudentDSN</code>
+                                        </div>
+                                        <div class="dsn-step">
+                                            <strong>Step 4:</strong> Select your database StudentDB.accdb and save
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image27.png" alt="ODBC DSN Configuration" class="step-image">
+                                    <div class="image-caption">Configuring ODBC Data Source Name (DSN)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Since we are using the ODBC bridge (or UCanAccess):</p>
+                                <div class="setup-list">
+                                    <li>Right-click Libraries in your project → Add JAR/Folder</li>
+                                    <li>If using UCanAccess, add all required JARs:</li>
+                                </div>
+                                
+                                <div class="library-grid">
+                                    <div class="library-item">
+                                        <span class="lib-icon">📦</span>
+                                        <span>ucanaccess.jar</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <span class="lib-icon">📦</span>
+                                        <span>jackcess.jar</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <span class="lib-icon">📦</span>
+                                        <span>commons-lang.jar</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <span class="lib-icon">📦</span>
+                                        <span>commons-logging.jar</span>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image28.png" alt="Adding Libraries" class="step-image">
+                                    <div class="image-caption">Adding required JAR files to NetBeans project</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Create Java Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Right-click Source Packages → New → Java Class</li>
+                                    <li>Name it, e.g., AccessJDBCExample</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image29.png" alt="Creating Java Class" class="step-image">
+                                    <div class="image-caption">Creating new Java class in NetBeans</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Write Java Code</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Here's a basic program using your DSN to connect, insert, and fetch data:</p>
+                                
+                                <div class="code-section">
+                                    <h5>💻 JDBC-ODBC Bridge Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package week5jdbc;
+import java.sql.*;
+
+public class AccessJDBCExample {
+    public static void main(String[] args) {
+        try {
+            // Load UCanAccess JDBC Driver
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+            
+            // Connection using DSN
+            String url = "jdbc:odbc:StudentDSN"; // If using DSN
+            Connection con = DriverManager.getConnection(url);
+            
+            // Create Statement object
+            Statement stmt = con.createStatement();
+            
+            // INSERT Operation
+            stmt.executeUpdate(
+                "INSERT INTO student (RollNo, Name, Marks) VALUES (1, 'Lakshmi', 95)"
+            );
+            System.out.println("Record inserted successfully!");
+            
+            // SELECT Operation
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+            
+            // Display results
+            System.out.println("\nRollNo\tName\tMarks");
+            System.out.println("-------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("RollNo") + "\t" +
+                                   rs.getString("Name") + "\t" +
+                                   rs.getDouble("Marks"));
+            }
+            
+            // Close connections
+            rs.close();
+            stmt.close();
+            con.close();
+            
+            System.out.println("\nConnection closed successfully!");
+            
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image30.png" alt="Java Code Implementation" class="step-image">
+                                    <div class="image-caption">Writing JDBC-ODBC Bridge code in NetBeans</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Run the Program</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click the green Run button in NetBeans</li>
+                                    <li>You should see the inserted record and all records in the student table displayed in the Output window</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image31.png" alt="Program Execution" class="step-image">
+                                    <div class="image-caption">Running the program and viewing output</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">7</div>
+                                <h4>Next Steps & Advanced Operations</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Once this works, we can explore advanced database operations:</p>
+                                
+                                <div class="advanced-ops">
+                                    <div class="op-card">
+                                        <div class="op-icon">✏️</div>
+                                        <div class="op-content">
+                                            <h6>UPDATE Operations</h6>
+                                            <p>Add UPDATE statement to modify existing records</p>
+                                        </div>
+                                    </div>
+                                    <div class="op-card">
+                                        <div class="op-icon">🗑️</div>
+                                        <div class="op-content">
+                                            <h6>DELETE Operations</h6>
+                                            <p>Add DELETE statement to remove records</p>
+                                        </div>
+                                    </div>
+                                    <div class="op-card">
+                                        <div class="op-icon">🧭</div>
+                                        <div class="op-content">
+                                            <h6>ResultSet Navigation</h6>
+                                            <p>Explore first, last, previous, next methods</p>
+                                        </div>
+                                    </div>
+                                    <div class="op-card">
+                                        <div class="op-icon">🔍</div>
+                                        <div class="op-content">
+                                            <h6>Advanced Queries</h6>
+                                            <p>Complex SELECT statements with WHERE clauses</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image32.png" alt="Advanced Operations" class="step-image">
+                                    <div class="image-caption">Exploring advanced database operations</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <div class="success-message">
+                                    <strong>JDBC-ODBC Bridge Connection Successful!</strong><br>
+                                    ✓ NetBeans project created successfully<br>
+                                    ✓ MS Access database and DSN configured<br>
+                                    ✓ JDBC-ODBC bridge connection established<br>
+                                    ✓ INSERT and SELECT operations performed<br>
+                                    ✓ Data retrieved and displayed successfully<br>
+                                    ✓ Ready for advanced database operations
+                                </div>
+                                <p>The codes executed successfully and the desired operations are performed on the database.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Java Servlets Section -->
+            <section id="servlets" class="lab-section">
+                <h3>🌐 Java Servlets Implementation</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to run different servlets and implement real-life examples using Java Servlets. This comprehensive tutorial covers servlet creation, configuration, and practical applications.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To run different servlets and to implement real life examples using servlets</p>
+                    </div>
+
+                    <div class="servlet-setup">
+                        <h4>🚀 Steps to Run a Servlet</h4>
+                        
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create Web Application Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on File → New Project → Java Web → Web Application</li>
+                                    <li>Click Next</li>
+                                    <li>Click Next</li>
+                                    <li>Click Next and follow the default settings of the project</li>
+                                    <li>Leave it without making any changes</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image33.png" alt="Web Application Creation Step 1" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 1</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image34.png" alt="Web Application Creation Step 2" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 2</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image35.png" alt="Web Application Creation Step 3" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Create Servlet Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on Servlet → Give servlet class name</li>
+                                    <li>Name the servlet and click finish</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image36.png" alt="Servlet Creation Step 1" class="step-image">
+                                    <div class="image-caption">Creating new servlet class - Step 1</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image37.png" alt="Servlet Creation Step 2" class="step-image">
+                                    <div class="image-caption">Creating new servlet class - Step 2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on Libraries → Add JAR File → com.mysql.jdbc_5.1.5</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image38.png" alt="Adding Libraries" class="step-image">
+                                    <div class="image-caption">Adding MySQL JDBC library to project</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Configure web.xml</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Add the servlet information to the web.xml file</p>
+                                <div class="image-container">
+                                    <img src="images/image39.png" alt="Web.xml Configuration" class="step-image">
+                                    <div class="image-caption">Configuring servlet in web.xml file</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Add Servlet Code and Run</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Add the code related to servlet and run the file to get the desired output.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="programs-container">
+                        <h4>💻 Servlet Programs</h4>
+
+                        <!-- Program 1 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 1</span>
+                                <h4>Simple HTTP Servlet - Hello World</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple HTTP servlet that displays "Hello"
+                                </div>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HelloServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        // Set content type
+        response.setContentType("text/html");
+        
+        // Print "Hello"
+        PrintWriter out = response.getWriter();
+        out.println("<h1>Hello</h1>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image40.png" alt="Hello Servlet Output" class="step-image">
+                                    <div class="image-caption">Output showing Hello message from servlet</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 2 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 2</span>
+                                <h4>Generic Servlet Implementation</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple generic servlet that prints a simple text
+                                </div>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class HelloGenericServlet extends GenericServlet {
+    @Override
+    public void service(ServletRequest request, ServletResponse response)
+            throws ServletException, IOException {
+        
+        // Set content type
+        response.setContentType("text/html");
+        
+        // Print "Hello"
+        PrintWriter out = response.getWriter();
+        out.println("<h1>Hello from GenericServlet</h1>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image41.png" alt="Generic Servlet Output" class="step-image">
+                                    <div class="image-caption">Output from Generic Servlet implementation</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 3 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 3</span>
+                                <h4>HTML Form with Servlet - Two Input Values</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple program that takes 2 input values from the user using HTML form and sends the values to the servlet and then displays the 2 values
+                                </div>
+                                
+
+
+                                <div class="code-section">
+                                    <h5>💻 DisplayServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DisplayServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        // Get values from form
+        String v1 = request.getParameter("value1");
+        String v2 = request.getParameter("value2");
+        
+        // Set response type
+        response.setContentType("text/html");
+        
+        // Print values
+        PrintWriter out = response.getWriter();
+        out.println("<h2>You Entered:</h2>");
+        out.println("<p>Value 1: " + v1 + "</p>");
+        out.println("<p>Value 2: " + v2 + "</p>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image42.png" alt="Two Input Form Output" class="step-image">
+                                    <div class="image-caption">Form input and servlet response display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 4 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 4</span>
+                                <h4>Database Insert with Authentication</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple program that takes username and password from user, prints success if correct, and inserts into database
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image43.png" alt="Insert Form" class="step-image">
+                                    <div class="image-caption">Username and password input form</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 InsertServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.sql.*;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InsertServlet extends HttpServlet {
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
+            response.setContentType("text/html;charset=UTF-8");
+            PrintWriter out = response.getWriter();
+            out.println("success");
+            
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jdbc:mysql://localhost/db";
+            String username = "root";
+            String password = "";
+            Connection con = DriverManager.getConnection(url, username, password);
+            out.println("success1");
+            
+            String un1 = request.getParameter("un");
+            String pw1 = request.getParameter("pw");
+            String sql = "INSERT INTO login(username, password) VALUES('" + un1 + "','" + pw1 + "')";
+            out.println("success2");
+            
+            Statement st = con.createStatement();
+            out.println("success3");
+            int n = st.executeUpdate(sql);
+            out.println("success3");
+            
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet NewServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>no. Rows inserted are " + n + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        } catch (Exception E) {
+            E.getMessage();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image44.png" alt="Database Insert Output" class="step-image">
+                                    <div class="image-caption">Database insertion success message</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 5 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 5</span>
+                                <h4>Pizza Order Form with Servlet</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a program that takes input from user for Pizza order and displays the output for the options user has chosen using servlet
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image45.png" alt="Pizza Order Form" class="step-image">
+                                    <div class="image-caption">Pizza order form with various input options</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 OrderServlet1.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/order1")
+public class OrderServlet1 extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        
+        // Read parameters from the request
+        String name = request.getParameter("name");
+        String crust = request.getParameter("crust");
+        String[] toppings = request.getParameterValues("toppings");
+        String appetizer = request.getParameter("appetizer");
+        String address = request.getParameter("address");
+        String cardType = request.getParameter("cardType");
+        String cardNumber = request.getParameter("cardNumber");
+        String confirmCardNumber = request.getParameter("confirmCardNumber");
+        
+        // Basic validation for card number match
+        if (cardNumber == null || !cardNumber.equals(confirmCardNumber)) {
+            out.println("<h3>Credit card numbers do not match. Please go back and try again.</h3>");
+            return;
+        }
+        
+        // Start printing the order details in table format
+        out.println("<html><head><title>Your Order</title></head><body>");
+        out.println("<h2>Your Order...</h2>");
+        out.println("<table border='1' cellpadding='5'>");
+        
+        // Print parameter name and value rows
+        printRow(out, "submit", "Order Pizza");
+        printRow(out, "address", address);
+        printRow(out, "name", name);
+        printRow(out, "appetizer", appetizer);
+        printRow(out, "cardType", cardType);
+        printRow(out, "crust", crust);
+        
+        // Print card number as bullet points
+        out.print("<tr><td>cardNum</td><td><ul>");
+        for (int i = 0; i < cardNumber.length(); i += 5) {
+            int end = Math.min(i + 5, cardNumber.length());
+            out.print("<li>" + cardNumber.substring(i, end) + "</li>");
+        }
+        out.println("</ul></td></tr>");
+        
+        // Print toppings as list
+        out.print("<tr><td>toppings</td><td><ul>");
+        if (toppings != null) {
+            for (String topping : toppings) {
+                out.print("<li>" + topping + "</li>");
+            }
+        }
+        out.println("</ul></td></tr>");
+        out.println("</table>");
+        out.println("</body></html>");
+    }
+    
+    private void printRow(PrintWriter out, String paramName, String paramValue) {
+        out.println("<tr>");
+        out.println("<td>" + paramName + "</td>");
+        out.println("<td>" + paramValue + "</td>");
+        out.println("</tr>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image46.png" alt="Pizza Order Output" class="step-image">
+                                    <div class="image-caption">Pizza order confirmation with selected options</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 6 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 6</span>
+                                <h4>Login Authentication Servlet</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a program that takes username and password from user, checks if they are correct, and prints welcome message or error message using servlets
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image47.png" alt="Login Form" class="step-image">
+                                    <div class="image-caption">Login form for authentication</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 LoginServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    // Hardcoded username and password for demo
+    private final String USERNAME = "admin";
+    private final String PASSWORD = "password123";
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        
+        // Get username and password from form
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        
+        response.setContentType("text/html");
+        
+        if (USERNAME.equals(username) && PASSWORD.equals(password)) {
+            // Credentials are correct — print welcome message
+            response.getWriter().println("<h1>Welcome, " + username + "!</h1>");
+        } else {
+            // Credentials are incorrect — print error message
+            response.getWriter().println("<h3>Invalid username or password. Please try again.</h3>");
+            response.getWriter().println("<a href='login.html'>Go back to Login</a>");
+        }
+    }
+    
+    // Optional: show the login form on GET request
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        response.getWriter().println("<form method='POST' action='login'>");
+        response.getWriter().println("Username: <input type='text' name='username' /><br/>");
+        response.getWriter().println("Password: <input type='password' name='password' /><br/>");
+        response.getWriter().println("<input type='submit' value='Login' />");
+        response.getWriter().println("</form>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image48.png" alt="Login Success/Error" class="step-image">
+                                    <div class="image-caption">Login authentication result display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <div class="success-message">
+                                    <strong>All Servlet Programs Executed Successfully!</strong><br>
+                                    ✓ Web application project created<br>
+                                    ✓ HTTP and Generic servlets implemented<br>
+                                    ✓ HTML forms integrated with servlets<br>
+                                    ✓ Database operations performed<br>
+                                    ✓ Real-life examples (Pizza order, Login) completed<br>
+                                    ✓ Request parameters handling demonstrated
+                                </div>
+                                <p>The codes executed successfully and different servlets with real-life examples have been implemented.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cookies & Sessions Section -->
+            <section id="cookies-sessions" class="lab-section">
+                <h3>🍪 Cookies & Sessions in Java Servlets</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn about state management in web applications using Cookies and Sessions. Understand how to maintain user data across multiple HTTP requests in servlet-based applications.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To understand and implement Cookies and Sessions for state management in Java Servlets</p>
+                    </div>
+
+                    <!-- Cookies Section -->
+                    <div class="cookies-section">
+                        <h4>🍪 Working with Cookies</h4>
+                        
+                        <div class="concept-card">
+                            <div class="concept-header">
+                                <h5>Cookie Methods & Operations</h5>
+                            </div>
+                            <div class="concept-content">
+                                <p>For adding cookie or getting the value from the cookie, we need some methods provided by other interfaces:</p>
+                                
+                                <div class="method-grid">
+                                    <div class="method-card">
+                                        <div class="method-signature">
+                                            <code>public void addCookie(Cookie ck)</code>
+                                        </div>
+                                        <div class="method-description">
+                                            Method of HttpServletResponse interface used to add cookie in response object.
+                                        </div>
+                                    </div>
+                                    <div class="method-card">
+                                        <div class="method-signature">
+                                            <code>public Cookie[] getCookies()</code>
+                                        </div>
+                                        <div class="method-description">
+                                            Method of HttpServletRequest interface used to return all cookies from the browser.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="operations-grid">
+                            <!-- Create Cookie -->
+                            <div class="operation-card">
+                                <div class="operation-header">
+                                    <span class="operation-icon">➕</span>
+                                    <h5>How to Create Cookie?</h5>
+                                </div>
+                                <div class="operation-content">
+                                    <p>Simple code to create cookie:</p>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">Cookie ck = new Cookie("user", "sonoo jaiswal"); // creating cookie object
+response.addCookie(ck); // adding cookie in the response</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Delete Cookie -->
+                            <div class="operation-card">
+                                <div class="operation-header">
+                                    <span class="operation-icon">❌</span>
+                                    <h5>How to Delete Cookie?</h5>
+                                </div>
+                                <div class="operation-content">
+                                    <p>Simple code to delete cookie (mainly used for logout):</p>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">Cookie ck = new Cookie("user", ""); // deleting value of cookie
+ck.setMaxAge(0); // changing the maximum age to 0 seconds
+response.addCookie(ck); // adding cookie in the response</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Get Cookie -->
+                            <div class="operation-card">
+                                <div class="operation-header">
+                                    <span class="operation-icon">🔍</span>
+                                    <h5>How to Get Cookies?</h5>
+                                </div>
+                                <div class="operation-content">
+                                    <p>Simple code to get all cookies:</p>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">Cookie ck[] = request.getCookies();
+for(int i = 0; i < ck.length; i++) {
+    out.print("<br>" + ck[i].getName() + " " + ck[i].getValue());
+    // printing name and value of cookie
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cookie Example -->
+                        <div class="example-card">
+                            <div class="example-header">
+                                <h5>💻 Simple Example of Servlet Cookies</h5>
+                            </div>
+                            <div class="example-content">
+                                <p>In this example, we store the user's name in a cookie object and access it in another servlet. Session corresponds to a particular user, so different browsers will show different values.</p>
+                                
+                                <div class="code-section">
+                                    <h6>💻 FirstServlet.java:</h6>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class FirstServlet extends HttpServlet {
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            
+            String n = request.getParameter("userName");
+            out.print("Welcome " + n);
+            
+            // Creating cookie object
+            Cookie ck = new Cookie("uname", n);
+            response.addCookie(ck); // adding cookie in the response
+            
+            // Creating submit button
+            out.print("<form action='servlet2'>");
+            out.print("<input type='submit' value='go'>");
+            out.print("</form>");
+            
+            out.close();
+            
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h6>💻 SecondServlet.java:</h6>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class SecondServlet extends HttpServlet {
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            
+            Cookie ck[] = request.getCookies();
+            out.print("Hello " + ck[0].getValue());
+            
+            out.close();
+            
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h6>📝 web.xml:</h6>
+                                    <div class="code-container">
+                                        <pre><code class="language-xml"><web-app>
+    
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>FirstServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>SecondServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+    
+</web-app></code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image49.png" alt="Cookie Example Output" class="step-image">
+                                    <div class="image-caption">Cookie implementation showing user data persistence</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sessions Section -->
+                    <div class="sessions-section">
+                        <h4>🔐 Working with Sessions</h4>
+                        
+                        <div class="concept-card">
+                            <div class="concept-header">
+                                <h5>Session Management with Hidden Fields</h5>
+                            </div>
+                            <div class="concept-content">
+                                <p>Sessions allow you to maintain user state across multiple requests. Here we demonstrate session management using hidden form fields.</p>
+                            </div>
+                        </div>
+
+                        <!-- Session Example -->
+                        <div class="example-card">
+                            <div class="example-header">
+                                <h5>💻 Session Example with Hidden Fields</h5>
+                            </div>
+                            <div class="example-content">
+                                <p>This example shows how to maintain user data across servlets using hidden form fields for session management.</p>
+                                
+                                <div class="code-section">
+                                    <h6>💻 FirstServlet.java:</h6>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class FirstServlet extends HttpServlet {
+    
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            
+            String n = request.getParameter("userName");
+            out.print("Welcome " + n);
+            
+            // Creating form that has invisible/hidden textfield
+            out.print("<form action='servlet2'>");
+            out.print("<input type='hidden' name='uname' value='" + n + "'>");
+            out.print("<input type='submit' value='go'>");
+            out.print("</form>");
+            out.close();
+            
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h6>💻 SecondServlet.java:</h6>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class SecondServlet extends HttpServlet {
+    
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            
+            // Getting the value from the hidden field
+            String n = request.getParameter("uname");
+            out.print("Hello " + n);
+            
+            out.close();
+            
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Section -->
+                    <div class="comparison-section">
+                        <h4>⚖️ Cookies vs Sessions Comparison</h4>
+                        
+                        <div class="comparison-grid">
+                            <div class="comparison-card">
+                                <div class="comparison-header cookies-header">
+                                    <span class="comparison-icon">🍪</span>
+                                    <h5>Cookies</h5>
+                                </div>
+                                <div class="comparison-content">
+                                    <ul class="comparison-list">
+                                        <li>Stored on client-side (browser)</li>
+                                        <li>Limited storage capacity (4KB)</li>
+                                        <li>Persistent across browser sessions</li>
+                                        <li>Can be disabled by user</li>
+                                        <li>Less secure (visible to user)</li>
+                                        <li>Suitable for user preferences</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="comparison-card">
+                                <div class="comparison-header sessions-header">
+                                    <span class="comparison-icon">🔐</span>
+                                    <h5>Sessions</h5>
+                                </div>
+                                <div class="comparison-content">
+                                    <ul class="comparison-list">
+                                        <li>Stored on server-side</li>
+                                        <li>Unlimited storage capacity</li>
+                                        <li>Temporary (session lifetime)</li>
+                                        <li>Cannot be disabled by user</li>
+                                        <li>More secure (server-side)</li>
+                                        <li>Suitable for sensitive data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result Section -->
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="result-icon">✅</span>
+                            <h4>Result</h4>
+                        </div>
+                        <div class="result-content">
+                            <div class="success-message">
+                                <strong>Cookies & Sessions Implementation Successful!</strong><br>
+                                ✓ Cookie creation, deletion, and retrieval methods learned<br>
+                                ✓ Servlet-to-servlet data transfer using cookies<br>
+                                ✓ Session management with hidden fields implemented<br>
+                                ✓ State management techniques demonstrated<br>
+                                ✓ Comparison between cookies and sessions understood
+                            </div>
+                            <p>Successfully implemented both cookies and sessions for state management in Java servlets, demonstrating different approaches to maintain user data across HTTP requests.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Spring Boot Section -->
+            <section id="spring-boot" class="lab-section">
+                <h3>🌱 Spring Boot Framework</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn Spring Boot framework from installation to building complete web applications. This comprehensive guide covers environment setup, project structure, and practical implementations.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Installation and Environment Setup -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Installation and Environment Setup</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To install and configure Java, Maven, and Spring Tool Suite (STS).
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li><strong>Install JDK 17+:</strong>
+                                        <div class="code-container">
+                                            <pre><code class="language-bash"># Verify Java installation
+java -version
+javac -version
+
+# Set JAVA_HOME environment variable
+# Windows: JAVA_HOME=C:\Program Files\Java\jdk-17
+# Linux/Mac: export JAVA_HOME=/usr/lib/jvm/java-17-openjdk</code></pre>
+                                        </div>
+                                    </li>
+                                    <li><strong>Install Maven:</strong>
+                                        <div class="code-container">
+                                            <pre><code class="language-bash"># Verify Maven installation
+mvn -version
+
+# Expected output:
+# Apache Maven 3.x.x
+# Maven home: /path/to/maven
+# Java version: 17.x.x</code></pre>
+                                        </div>
+                                    </li>
+                                    <li><strong>Install Spring Tool Suite (STS) / IntelliJ IDEA</strong></li>
+                                    <li><strong>Verify successful setup</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Understanding Spring Boot Structure -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Understanding Spring Boot Structure</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To explore folder structure and configuration files of a Spring Boot project.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Generate a sample project from Spring Initializr</li>
+                                    <li>Study src/main/java, src/main/resources, and pom.xml</li>
+                                    <li>Observe the role of application.properties</li>
+                                </ul>
+
+                                <div class="info-box">
+                                    <h5>📁 Project Structure:</h5>
+                                    <div class="code-container">
+                                        <pre><code>my-spring-app/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/demo/
+│   │   │       └── DemoApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── static/
+│   │       └── templates/
+│   └── test/
+├── target/
+└── pom.xml</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Creating Project using Spring Initializr -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Creating Project using Spring Initializr</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To create a starter Spring Boot application using the Spring Initializr web interface.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Use <a href="https://start.spring.io" target="_blank">https://start.spring.io</a></li>
+                                    <li>Choose Maven, Java, and "Spring Web"</li>
+                                    <li>Download and import into STS / IntelliJ</li>
+                                </ul>
+
+                                <div class="info-box">
+                                    <h5>⚙️ Configuration Settings:</h5>
+                                    <ul>
+                                        <li><strong>Project:</strong> Maven</li>
+                                        <li><strong>Language:</strong> Java</li>
+                                        <li><strong>Spring Boot:</strong> 3.x.x</li>
+                                        <li><strong>Group:</strong> com.example</li>
+                                        <li><strong>Artifact:</strong> demo</li>
+                                        <li><strong>Dependencies:</strong> Spring Web</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Developing and Running a Simple Application -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Developing and Running a Simple Application</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To develop a simple web application and run it using an embedded server.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Create HelloController.java</li>
+                                    <li>Return a welcome message using @GetMapping</li>
+                                    <li>Run and test via http://localhost:8080/hello</li>
+                                </ul>
+
+                                <div class="code-section">
+                                    <h5>💻 HelloController.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+    
+    @GetMapping("/hello")
+    public String hello() {
+        return "Welcome to Spring Boot!";
+    }
+    
+    @GetMapping("/")
+    public String home() {
+        return "Hello World from Spring Boot!";
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exploring @SpringBootApplication Annotation -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Exploring @SpringBootApplication Annotation</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To understand and demonstrate the functionality of @SpringBootApplication.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Identify its combined annotations: @Configuration, @EnableAutoConfiguration, @ComponentScan</li>
+                                    <li>Write and explain the main class structure</li>
+                                </ul>
+
+                                <div class="code-section">
+                                    <h5>💻 Main Application Class:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+// Equivalent to:
+// @Configuration + @EnableAutoConfiguration + @ComponentScan
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="info-box">
+                                    <h5>🔍 Annotation Breakdown:</h5>
+                                    <ul>
+                                        <li><strong>@Configuration:</strong> Indicates configuration class</li>
+                                        <li><strong>@EnableAutoConfiguration:</strong> Enables auto-configuration</li>
+                                        <li><strong>@ComponentScan:</strong> Scans for components in current package</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Building Project using Maven -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Building Project using Maven</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To build and run Spring Boot applications using Maven.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Use commands mvn clean install and mvn spring-boot:run</li>
+                                    <li>Observe compiled .jar under target/ folder</li>
+                                </ul>
+
+                                <div class="code-section">
+                                    <h5>🔨 Maven Commands:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-bash"># Clean and compile project
+mvn clean install
+
+# Run Spring Boot application
+mvn spring-boot:run
+
+# Package as JAR
+mvn package
+
+# Run the JAR file
+java -jar target/demo-0.0.1-SNAPSHOT.jar</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customizing Application Properties -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">7</div>
+                                <h4>Customizing Application Properties</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To modify default application configurations.
+                                </div>
+                                
+                                <h5>📋 Tasks:</h5>
+                                <ul class="task-list">
+                                    <li>Change server port using server.port=9090</li>
+                                    <li>Add custom property and access via @Value annotation</li>
+                                </ul>
+
+                                <div class="code-section">
+                                    <h5>⚙️ application.properties:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-properties"># Server Configuration
+server.port=9090
+
+# Custom Properties
+app.name=My Spring Boot App
+app.version=1.0.0
+app.description=Learning Spring Boot Framework</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Using @Value Annotation:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ConfigController {
+    
+    @Value("${app.name}")
+    private String appName;
+    
+    @Value("${app.version}")
+    private String appVersion;
+    
+    @GetMapping("/info")
+    public String getAppInfo() {
+        return "Application: " + appName + ", Version: " + appVersion;
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Project -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">8</div>
+                                <h4>Mini Project (Integration Task)</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To combine all Unit 1 concepts to build a mini Spring Boot application.
+                                </div>
+                                
+                                <h5>📋 Example Projects:</h5>
+                                <ul class="task-list">
+                                    <li>Student Information Service</li>
+                                    <li>Simple Calculator REST API</li>
+                                    <li>Greeting Service</li>
+                                </ul>
+
+                                <div class="code-section">
+                                    <h5>💻 Student Information Service:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.*;
+import java.util.*;
+
+@RestController
+@RequestMapping("/api/students")
+public class StudentController {
+    
+    private List<Student> students = new ArrayList<>();
+    
+    @GetMapping
+    public List<Student> getAllStudents() {
+        return students;
+    }
+    
+    @PostMapping
+    public Student addStudent(@RequestBody Student student) {
+        students.add(student);
+        return student;
+    }
+    
+    @GetMapping("/{id}")
+    public Student getStudent(@PathVariable int id) {
+        return students.stream()
+            .filter(s -> s.getId() == id)
+            .findFirst()
+            .orElse(null);
+    }
+}
+
+class Student {
+    private int id;
+    private String name;
+    private double marks;
+    
+    // Constructors, getters, setters
+    public Student() {}
+    
+    public Student(int id, String name, double marks) {
+        this.id = id;
+        this.name = name;
+        this.marks = marks;
+    }
+    
+    // Getters and Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    
+    public double getMarks() { return marks; }
+    public void setMarks(double marks) { this.marks = marks; }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="info-box">
+                                    <h5>🧪 Testing the API:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-bash"># GET all students
+curl http://localhost:9090/api/students
+
+# POST new student
+curl -X POST http://localhost:9090/api/students \
+  -H "Content-Type: application/json" \
+  -d '{"id":1,"name":"Alice","marks":85.5}'
+
+# GET specific student
+curl http://localhost:9090/api/students/1</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spring Tools Suite Implementation -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">9</div>
+                                <h4>Spring Tools Suite Implementation</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="objective">
+                                    <strong>🎯 Aim:</strong> To implement Spring Tools Suite and run the programs using STS.
+                                </div>
+                                
+                                <h5>📋 Procedure:</h5>
+                                
+                                <div class="substep">
+                                    <h6>Step 1: Open STS Workspace</h6>
+                                    <p>Launch Spring Tools Suite from your desktop or applications menu.</p>
+                                    <div class="image-container">
+                                        <img src="images/image50.png" alt="STS Workspace" class="step-image">
+                                        <div class="image-caption">Opening STS workspace</div>
+                                    </div>
+                                </div>
+
+                                <div class="substep">
+                                    <h6>Step 2: Click on Green Icon</h6>
+                                    <p>Click on the green icon to open the project creation wizard.</p>
+                                    <div class="image-container">
+                                        <img src="images/image51.png" alt="Green Icon" class="step-image">
+                                        <div class="image-caption">Clicking on the green icon</div>
+                                    </div>
+                                </div>
+
+                                <div class="substep">
+                                    <h6>Step 3: Create Spring Starter Project</h6>
+                                    <p>Navigate to File → New → Spring Starter Project</p>
+                                    <div class="image-container">
+                                        <img src="images/image52.png" alt="Spring Starter Project" class="step-image">
+                                        <div class="image-caption">Creating new Spring Starter Project</div>
+                                    </div>
+                                </div>
+
+                                <div class="substep">
+                                    <h6>Step 4: Configure Project Details</h6>
+                                    <p>Give a valid name and package name, click Next and leave the default settings, then click Finish.</p>
+                                    <div class="image-container">
+                                        <img src="images/image53.png" alt="Project Configuration" class="step-image">
+                                        <div class="image-caption">Configuring project name and package</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 1 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 1</span>
+                                <h4>Simple Hello Program using STS</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple program using the STS tool and display "Hello".
+                                </div>
+                                
+                                <h5>📋 Process:</h5>
+                                <ol class="process-list">
+                                    <li>Create a new Spring Starter Project</li>
+                                    <li>Open src/main/java → com.example.projectname → ProjectnameApplication.java</li>
+                                    <li>Add the following code in the java file for the required output</li>
+                                </ol>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.example2;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Example2Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Example2Application.class, args);
+        System.out.println("Hello Bhanu!!");
+    }
+
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image54.png" alt="Program Output" class="step-image">
+                                    <div class="image-caption">Output showing "Hello Bhanu!!" message</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Spring Boot Setup Complete</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>Successfully completed Spring Boot environment setup and basic application development.</p>
+                                <div class="success-message">
+                                    <strong>Spring Boot Learning Objectives Achieved!</strong><br>
+                                    ✓ Environment setup with JDK, Maven, and STS<br>
+                                    ✓ Project structure understanding<br>
+                                    ✓ Spring Initializr project creation<br>
+                                    ✓ Simple web application development<br>
+                                    ✓ @SpringBootApplication annotation explored<br>
+                                    ✓ Maven build process mastered<br>
+                                    ✓ Application properties customization<br>
+                                    ✓ Mini project implementation completed<br>
+                                    ✓ Spring Tools Suite implementation<br>
+                                    ✓ Simple Hello program created and executed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JDBC with MySQL Section -->
+            <section id="jdbc-mysql-spring" class="lab-section">
+                <h3>🗄️ JDBC with MySQL</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to integrate JDBC with MySQL in Spring Boot applications. This section covers database connectivity, configuration, and practical implementations.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Project Structure -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Project Structure Setup</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Create a Spring starter app in the given below structure:</p>
+                                <div class="image-container">
+                                    <img src="images/image55.png" alt="Project Structure" class="step-image">
+                                    <div class="image-caption">Spring Boot MySQL JDBC project structure</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Employee Model -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Employee Model Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 Employee.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.mysqljdbc;
+
+public class Employee {
+
+    private int id;
+    private String name;
+    private double salary;
+
+    public Employee() {}
+
+    public Employee(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // getters and setters
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Employee Controller -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Employee Controller</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 EmployeeController.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.mysqljdbc;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class EmployeeController {
+
+    private final EmployeeRepository repo;
+
+    public EmployeeController(EmployeeRepository repo) {
+        this.repo = repo;
+    }
+
+    @GetMapping("/employees")
+    public List&lt;Employee&gt; getAllEmployees() {
+        return repo.findAll();
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Employee Repository -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Employee Repository</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 EmployeeRepository.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.mysqljdbc;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public class EmployeeRepository {
+
+    private final JdbcTemplate jdbc;
+
+    public EmployeeRepository(JdbcTemplate jdbc) {
+        this.jdbc = jdbc;
+    }
+
+    public List&lt;Employee&gt; findAll() {
+        return jdbc.query("SELECT * FROM employee",
+                (rs, rowNum) -&gt; new Employee(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getDouble("salary")
+                ));
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Application -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Main Application Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 MysqlJdbcDemoApplication.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.mysqljdbc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MysqlJdbcDemoApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MysqlJdbcDemoApplication.class, args);
+        System.out.println("&gt;&gt;&gt; MySQL JDBC App Started");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Configuration Files -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Configuration Files</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>⚙️ application.properties:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-properties">spring.application.name=MysqlJdbcDemo
+
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+spring.sql.init.mode=always
+spring.sql.init.platform=mysql
+spring.jpa.defer-datasource-initialization=true</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>🗄️ schema.sql:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE IF NOT EXISTS employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    salary DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>🗄️ data.sql:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">INSERT INTO employee (id, name, salary) VALUES (1, 'John Doe', 50000);
+INSERT INTO employee (id, name, salary) VALUES (2, 'Alice Smith', 60000);
+INSERT INTO employee (id, name, salary) VALUES (3, 'Bob Lee', 55000);</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Maven Configuration -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">7</div>
+                                <h4>Maven Dependencies</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>📄 pom.xml:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;3.5.7&lt;/version&gt;
+        &lt;relativePath/&gt;
+    &lt;/parent&gt;
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;MysqlJdbcDemo&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;name&gt;MysqlJdbcDemo&lt;/name&gt;
+    &lt;description&gt;Servlet + HttpSession + JPA + H2 demo&lt;/description&gt;
+    
+    &lt;properties&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;
+    
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-data-jdbc&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+            &lt;version&gt;5.1.49&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-j&lt;/artifactId&gt;
+            &lt;scope&gt;runtime&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Database Setup -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">8</div>
+                                <h4>Database Setup</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Create a database in the MySQL console:</p>
+                                <div class="code-section">
+                                    <h5>🗄️ MySQL Commands:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE DATABASE employee_db;
+USE employee_db;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Output -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">9</div>
+                                <h4>Application Output</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Run the application and access the employees endpoint:</p>
+                                <div class="image-container">
+                                    <img src="images/image56.png" alt="Application Output" class="step-image">
+                                    <div class="image-caption">MySQL JDBC application output showing employee data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>JDBC MySQL Integration Complete</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>Successfully integrated JDBC with MySQL in Spring Boot application.</p>
+                                <div class="success-message">
+                                    <strong>JDBC MySQL Integration Achieved!</strong><br>
+                                    ✓ Spring Boot project structure created<br>
+                                    ✓ Employee model and repository implemented<br>
+                                    ✓ REST controller for data access<br>
+                                    ✓ MySQL database configuration<br>
+                                    ✓ JdbcTemplate integration<br>
+                                    ✓ Database initialization with schema and data<br>
+                                    ✓ Application successfully running and serving data
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spring JPA with H2 Section -->
+            <section id="spring-jpa-h2" class="lab-section">
+                <h3>🗄️ Spring JPA with H2 Database</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to integrate Spring JPA with H2 in-memory database. This section covers JPA configuration, entity mapping, and repository implementations.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To implement:</p>
+                        <ul class="aim-list">
+                            <li>Java Servlet Application with HttpSession for session tracking</li>
+                            <li>Spring Data JPA with H2 in-memory database for CRUD operations</li>
+                            <li>Developing a Servlet to handle HTTP requests and responses</li>
+                            <li>Deploying the Servlet on Apache Tomcat</li>
+                        </ul>
+                    </div>
+
+                    <div class="tools-section">
+                        <h4>🛠️ Tools and Technologies Used</h4>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <span class="tool-icon">☕</span>
+                                <span>Java 17</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon">🌱</span>
+                                <span>Spring Boot (2.7.x or 3.x)</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon">🗄️</span>
+                                <span>Spring Data JPA</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon">💾</span>
+                                <span>H2 Database (in-memory)</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon">📦</span>
+                                <span>Maven (build management)</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon">🐱</span>
+                                <span>Tomcat (embedded server)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Project Structure -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Project Structure</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>📁 SessionTrackingApp1 Structure:</h5>
+                                    <div class="code-container">
+                                        <pre><code>SessionTrackingApp1/
+│
+├─ src/main/java/com/example/sessiontrackingapp1/
+│   ├─ controller/
+│   │   └─ SessionController.java
+│   ├─ model/
+│   │   └─ User.java
+│   ├─ repository/
+│   │   └─ UserRepository.java
+│   └─ SessionTrackingApp1Application.java
+│
+├─ src/main/resources/
+│   ├─ application.properties
+│   └─ static/ (optional for frontend files)
+│
+└─ pom.xml</code></pre>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image57.png" alt="Project Structure" class="step-image">
+                                    <div class="image-caption">SessionTrackingApp1 project structure in IDE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Application Properties -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Application Configuration</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>⚙️ application.properties:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-properties"># ===============================
+# = Application Name
+# ===============================
+spring.application.name=SessionTrackingApp1
+
+# ===============================
+# = H2 Database Configuration
+# ===============================
+spring.datasource.url=jdbc:h2:mem:sessiondb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# ===============================
+# = JPA Configuration
+# ===============================
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# ===============================
+# = Server Configuration
+# ===============================
+server.port=8080</code></pre>
+                                    </div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📝 Configuration Explanation:</h5>
+                                    <ul>
+                                        <li><strong>jdbc:h2:mem:sessiondb</strong> → creates an in-memory H2 database</li>
+                                        <li><strong>spring.jpa.hibernate.ddl-auto=update</strong> → automatically creates/updates tables</li>
+                                        <li><strong>H2 console</strong> is accessible at /h2-console</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Entity -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>User Entity Model</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 User.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.sessiontrackingapp1.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "app_user")  // &lt;- Rename table to avoid reserved keyword
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String username;
+    private String email;
+
+    public User() {}
+
+    public User(String username, String email) {
+        this.username = username;
+        this.email = email;
+    }
+
+    // getters and setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Repository -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>User Repository</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 UserRepository.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.sessiontrackingapp1.repository;
+
+import com.example.sessiontrackingapp1.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository&lt;User, Long&gt; {
+}</code></pre>
+                                    </div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📝 Repository Explanation:</h5>
+                                    <p>Provides CRUD operations for the User entity automatically through JpaRepository interface.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session Controller -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Session Controller</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 SessionController.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.sessiontrackingapp1.controller;
+
+import com.example.sessiontrackingapp1.model.User;
+import com.example.sessiontrackingapp1.repository.UserRepository;
+import jakarta.servlet.http.HttpSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SessionController {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @GetMapping("/session")
+    public String handleSession(@RequestParam(value = "username", required = false) String username,
+                                HttpSession session) {
+
+        if (username != null &amp;&amp; !username.isEmpty()) {
+            session.setAttribute("username", username);
+
+            // Save user to H2 DB
+            User user = new User(username, username + "@example.com");
+            userRepository.save(user);
+        }
+
+        String sessionUsername = (String) session.getAttribute("username");
+
+        if (sessionUsername != null) {
+            return "Welcome back, " + sessionUsername + "!";
+        } else {
+            return "Enter your username in URL parameter: ?username=YourName";
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📝 Controller Explanation:</h5>
+                                    <ul>
+                                        <li>Accepts username as a URL parameter (/session?username=John)</li>
+                                        <li>Stores username in HTTP session</li>
+                                        <li>Saves user details in H2 database</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Application -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Main Application Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>💻 SessionTrackingApp1Application.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package com.example.sessiontrackingapp1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SessionTrackingApp1Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SessionTrackingApp1Application.class, args);
+        System.out.println("&gt;&gt;&gt; Session Tracking App Started");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Maven Dependencies -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">7</div>
+                                <h4>Maven Dependencies</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="code-section">
+                                    <h5>📄 pom.xml:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;3.2.0&lt;/version&gt;
+        &lt;relativePath/&gt;
+    &lt;/parent&gt;
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;SessionTrackingApp1&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;name&gt;SessionTrackingApp1&lt;/name&gt;
+    &lt;description&gt;Session Tracking with Spring JPA and H2&lt;/description&gt;
+    
+    &lt;properties&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;
+    
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.h2database&lt;/groupId&gt;
+            &lt;artifactId&gt;h2&lt;/artifactId&gt;
+            &lt;scope&gt;runtime&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Running the Application -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">8</div>
+                                <h4>Steps to Run the Application</h4>
+                            </div>
+                            <div class="step-content">
+                                <ol class="run-steps">
+                                    <li>Open the project in your IDE (e.g., IntelliJ or Eclipse)</li>
+                                    <li>Run SessionTrackingApp1Application.java as a Java application</li>
+                                    <li>Access the application in browser:
+                                        <div class="code-container">
+                                            <pre><code>http://localhost:8080/session?username=YourName</code></pre>
+                                        </div>
+                                    </li>
+                                    <li>Open H2 console to view saved users:
+                                        <div class="code-container">
+                                            <pre><code>http://localhost:8080/h2-console
+• JDBC URL: jdbc:h2:mem:sessiondb
+• User: sa
+• Password: leave blank</code></pre>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Sample User Login -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">9</div>
+                                <h4>Sample User Login Examples</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Test the application with different usernames to see session tracking in action:</p>
+                                <div class="image-container">
+                                    <img src="images/image58.png" alt="User Login Example 1" class="step-image">
+                                    <div class="image-caption">First user login example showing session creation</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image59.png" alt="User Login Example 2" class="step-image">
+                                    <div class="image-caption">Second user login example demonstrating session tracking</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Console Output -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">10</div>
+                                <h4>Console Output</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>When the application runs, you can see the database operations in the console:</p>
+                                <div class="image-container">
+                                    <img src="images/image60.png" alt="Console Output" class="step-image">
+                                    <div class="image-caption">Console output showing SQL operations and table data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- H2 Console Access -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">11</div>
+                                <h4>H2 Console Access</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Access the H2 database console to view stored user data:</p>
+                                <div class="image-container">
+                                    <img src="images/image61.png" alt="H2 Console Login" class="step-image">
+                                    <div class="image-caption">H2 console login interface showing database connection</div>
+                                </div>
+                                <div class="output-description">
+                                    <ul class="output-list">
+                                        <li>Users entered through the URL are stored in the H2 database</li>
+                                        <li>Each username can be tracked in the session</li>
+                                        <li>H2 console shows the table users with the saved entries</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Spring JPA with H2 Implementation Complete</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>Successfully implemented Spring JPA with H2 database and HttpSession tracking.</p>
+                                <div class="success-message">
+                                    <strong>Session Tracking Application Achieved!</strong><br>
+                                    ✓ Spring Boot project with JPA configuration<br>
+                                    ✓ H2 in-memory database integration<br>
+                                    ✓ User entity and repository implementation<br>
+                                    ✓ HttpSession for session tracking<br>
+                                    ✓ REST controller for handling requests<br>
+                                    ✓ Automatic table creation and data persistence<br>
+                                    ✓ H2 console access for database viewing<br>
+                                    ✓ Sample user login demonstrations<br>
+                                    ✓ Console output verification
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script>
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('profileDropdown');
+            const profileIcon = document.querySelector('.profile-icon');
+            if (!profileIcon.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

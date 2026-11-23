@@ -1,0 +1,100 @@
+index.html:38: <a href="index.html#downloads" class="header-tool-btn">? Downloads</a>
+index.html:316: <button class="dl-java-btn" data-filename="ArchitecturalComparison.java">? Download .java</button>
+index.html:531: <button class="dl-java-btn" data-filename="ConcurrencyBenchmark.java">? Download .java</button>
+index.html:769: <button class="dl-code-btn" data-filename="setup_jdk26.sh">? Download .sh</button>
+index.html:849: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:849: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:850: <a href="assets/images/week-2/task-1/step-01.png" download class="step-btn">? Download</a>
+index.html:850: <a href="assets/images/week-2/task-1/step-01.png" download class="step-btn">? Download</a>
+index.html:866: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:866: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:867: <a href="assets/images/week-2/task-1/step-02.png" download class="step-btn">? Download</a>
+index.html:867: <a href="assets/images/week-2/task-1/step-02.png" download class="step-btn">? Download</a>
+index.html:883: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:883: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:884: <a href="assets/images/week-2/task-1/step-03.png" download class="step-btn">? Download</a>
+index.html:884: <a href="assets/images/week-2/task-1/step-03.png" download class="step-btn">? Download</a>
+index.html:893: <div class="step-img-wrap" data-title="Step 04: Download OpenJDK 26 Tarball">
+index.html:894: <img src="assets/images/week-2/task-1/step-04.png" alt="Step 04: Download OpenJDK 26 Tarball" loading="lazy" />
+index.html:900: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:900: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:901: <a href="assets/images/week-2/task-1/step-04.png" download class="step-btn">? Download</a>
+index.html:901: <a href="assets/images/week-2/task-1/step-04.png" download class="step-btn">? Download</a>
+index.html:917: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:917: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:918: <a href="assets/images/week-2/task-1/step-05.png" download class="step-btn">? Download</a>
+index.html:918: <a href="assets/images/week-2/task-1/step-05.png" download class="step-btn">? Download</a>
+index.html:934: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:934: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:935: <a href="assets/images/week-2/task-1/step-06.png" download class="step-btn">? Download</a>
+index.html:935: <a href="assets/images/week-2/task-1/step-06.png" download class="step-btn">? Download</a>
+index.html:951: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:951: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:952: <a href="assets/images/week-2/task-1/step-07.png" download class="step-btn">? Download</a>
+index.html:952: <a href="assets/images/week-2/task-1/step-07.png" download class="step-btn">? Download</a>
+index.html:968: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:968: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:969: <a href="assets/images/week-2/task-1/step-08.png" download class="step-btn">? Download</a>
+index.html:969: <a href="assets/images/week-2/task-1/step-08.png" download class="step-btn">? Download</a>
+index.html:985: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:985: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:986: <a href="assets/images/week-2/task-1/step-09.png" download class="step-btn">? Download</a>
+index.html:986: <a href="assets/images/week-2/task-1/step-09.png" download class="step-btn">? Download</a>
+index.html:1002: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1002: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1003: <a href="assets/images/week-2/task-1/step-10.png" download class="step-btn">? Download</a>
+index.html:1003: <a href="assets/images/week-2/task-1/step-10.png" download class="step-btn">? Download</a>
+index.html:1019: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1019: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1020: <a href="assets/images/week-2/task-1/step-11.png" download class="step-btn">? Download</a>
+index.html:1020: <a href="assets/images/week-2/task-1/step-11.png" download class="step-btn">? Download</a>
+index.html:1036: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1036: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1037: <a href="assets/images/week-2/task-1/step-12.png" download class="step-btn">? Download</a>
+index.html:1037: <a href="assets/images/week-2/task-1/step-12.png" download class="step-btn">? Download</a>
+index.html:1053: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1053: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1054: <a href="assets/images/week-2/task-1/step-13.png" download class="step-btn">? Download</a>
+index.html:1054: <a href="assets/images/week-2/task-1/step-13.png" download class="step-btn">? Download</a>
+index.html:1070: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1070: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1071: <a href="assets/images/week-2/task-1/step-14.png" download class="step-btn">? Download</a>
+index.html:1071: <a href="assets/images/week-2/task-1/step-14.png" download class="step-btn">? Download</a>
+index.html:1087: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1087: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1088: <a href="assets/images/week-2/task-1/step-15.png" download class="step-btn">? Download</a>
+index.html:1088: <a href="assets/images/week-2/task-1/step-15.png" download class="step-btn">? Download</a>
+index.html:1104: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1104: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1105: <a href="assets/images/week-2/task-1/step-16.png" download class="step-btn">? Download</a>
+index.html:1105: <a href="assets/images/week-2/task-1/step-16.png" download class="step-btn">? Download</a>
+index.html:1269: <button class="dl-java-btn" data-filename="AccessDemo.java">? Download .java</button>
+index.html:1352: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1352: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1353: <a href="assets/images/week-3/task-1/step-01.png" download class="step-btn">? Download</a>
+index.html:1353: <a href="assets/images/week-3/task-1/step-01.png" download class="step-btn">? Download</a>
+index.html:1369: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1369: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1370: <a href="assets/images/week-3/task-1/step-02.png" download class="step-btn">? Download</a>
+index.html:1370: <a href="assets/images/week-3/task-1/step-02.png" download class="step-btn">? Download</a>
+index.html:1379: <div class="step-img-wrap" data-title="Step 03: Download UCanAccess JARs">
+index.html:1380: <img src="assets/images/week-3/task-1/step-03.png" alt="Step 03: Download UCanAccess JARs" loading="lazy" />
+index.html:1386: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1386: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1387: <a href="assets/images/week-3/task-1/step-03.png" download class="step-btn">? Download</a>
+index.html:1387: <a href="assets/images/week-3/task-1/step-03.png" download class="step-btn">? Download</a>
+index.html:1403: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1403: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1404: <a href="assets/images/week-3/task-1/step-04.png" download class="step-btn">? Download</a>
+index.html:1404: <a href="assets/images/week-3/task-1/step-04.png" download class="step-btn">? Download</a>
+index.html:1420: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1420: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1421: <a href="assets/images/week-3/task-1/step-05.png" download class="step-btn">? Download</a>
+index.html:1421: <a href="assets/images/week-3/task-1/step-05.png" download class="step-btn">? Download</a>
+index.html:1437: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1437: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1438: <a href="assets/images/week-3/task-1/step-06.png" download class="step-btn">? Download</a>
+index.html:1438: <a href="assets/images/week-3/task-1/step-06.png" download class="step-btn">? Download</a>
+index.html:1454: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1454: <button class="step-btn ss-zoom-trigger">? Fullscreen</button>
+index.html:1455: <a href="assets/images/week-3/task-1/step-07.png" download class="step-btn">? Download</a>

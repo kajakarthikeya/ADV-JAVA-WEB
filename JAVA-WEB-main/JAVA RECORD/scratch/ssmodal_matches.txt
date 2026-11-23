@@ -1,0 +1,196 @@
+=== .\build_3level_portal.py ===
+  <div class="ss-modal" id="ssModal">
+  <h3 class="ss-modal-title" id="ssModalTitle">Image Preview</h3>
+  <a href="#" download id="ssModalDownload" class="step-btn">⬇ Download High-Res</a>
+  <img src="" alt="" id="ssModalImg" />
+  <div class="ss-modal" id="ssModal">
+  <h3 class="ss-modal-title" id="ssModalTitle">Image Preview</h3>
+  <a href="#" download id="ssModalDownload" class="step-btn">⬇ Download High-Res</a>
+  <img src="" alt="" id="ssModalImg" />
+=== .\build_complete_system.py ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\build_index_portal.py ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\build_perfect_record.py ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\index.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\script.js ===
+  const modal = document.getElementById('ssModal');
+  const modalImg = document.getElementById('ssModalImg');
+  const modalTitle = document.getElementById('ssModalTitle');
+  const modalDl = document.getElementById('ssModalDownload');
+  const modal = document.getElementById('ssModal');
+=== .\JAVA-WEB-main\index.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\script.js ===
+  const modal = document.getElementById('ssModal');
+  const modalImg = document.getElementById('ssModalImg');
+  const modalTitle = document.getElementById('ssModalTitle');
+  const modalDl = document.getElementById('ssModalDownload');
+  const modal = document.getElementById('ssModal');
+=== .\JAVA-WEB-main\pages\week-0.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-1.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-10.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-11.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-12.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-13.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-2.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-3.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-4.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-5.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-6.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-7.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-8.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\JAVA-WEB-main\pages\week-9.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-0.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-1.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-10.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-11.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-12.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-13.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-2.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-3.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-4.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-5.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-6.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-7.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-8.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\pages\week-9.html ===
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+  <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+  <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+=== .\scratch\find_elements.py ===
+  pos = text.find('ssModal')
+  out.append(f'ssModal in index.html: {"ssModal" in text}')
+=== .\scratch\search_ssmodal.py ===
+  if 'ssModal' in c:
+  matches.append((p, [line.strip() for line in c.splitlines() if 'ssModal' in line]))

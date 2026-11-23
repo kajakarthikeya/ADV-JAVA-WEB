@@ -1,0 +1,17 @@
+SCREENSHOT FROM SOURCE DOCUMENT -->
+          <div class="proof-container">
+            <div class="proof-card">
+              <div class="proof-header">
+                <span class="proof-tag">Authentic Terminal Proof</span>
+                <span class="proof-title">Ubuntu Linux Terminal — java --version</span>
+              </div>
+              <div class="ss-img-wrap" data-title="Ubuntu Terminal JDK 26 Verification">
+                <img src="assets/images/week-2/week2_terminal_verify.png" alt="Ubuntu Terminal JDK 26 Verification" />
+                <div class="ss-zoom-overlay">🔍 Click to Zoom Proof Screenshot</div>
+              </div>
+              <p class="proof-note">Authentic Ubuntu Linux terminal execution proof extracted from student document (adv java 2.odt).</p>
+            </div>
+          </div>
+
+          <p>Text console output captured during verification:</p>
+          

@@ -1,0 +1,13 @@
+w7_body length: 50055
+Headings in w7:
+  - <span class="section-icon">🎯</span> 1. Aim
+  - <span class="section-icon">⚙️</span> 2. Software Requirements
+  - <span class="section-icon">🔧</span> 3. Step-by-Step Procedure
+  - <span class="section-icon">📁</span> 4. Activity 1: NetBeans Web Application Creation &amp; index.html
+  - <span class="section-icon">☕</span> 5. Activity 2: HTTP Servlet Rendering Student Details (24EU08161)
+  - <span class="section-icon">🔄</span> 6. Activity 3: GET &amp; POST Request Handling (GetPostServlet.java)
+  - <span class="section-icon">⚙️</span> 7. Activity 4: Generic Servlet Implementation (MyGenericServlet.java)
+  - <span class="section-icon">⏳</span> 8. Activity 5: Servlet Life Cycle Implementation (LifeCycleServlet.java)
+  - <span class="section-icon">📋</span> 9. Activity 6: Interactive Student Registration Form Processing
+  - <span class="section-icon">📊</span> 10. Result Analysis &amp; Discussion
+  - <span class="section-icon">🏁</span> 12. Conclusion

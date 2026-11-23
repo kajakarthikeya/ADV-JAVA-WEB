@@ -1,0 +1,52 @@
+.\build_all_step_screenshots.py: Ubuntu Terminal, Windows CMD
+.\index.html: Replace, File input, Ubuntu Terminal
+.\script.js: Replace
+.\step_gallery_data.py: Ubuntu Terminal
+.\JAVA-WEB-main\build_weeks_0_to_3_v2.py: Replace, File input, Ubuntu Terminal
+.\JAVA-WEB-main\build_weeks_4_to_8_v2.py: Replace, File input
+.\JAVA-WEB-main\build_weeks_9_to_13_v2.py: Replace, File input
+.\JAVA-WEB-main\generate_weeks_0_to_3.py: Replace, File input, Ubuntu Terminal
+.\JAVA-WEB-main\generate_weeks_4_to_8.py: Replace, File input
+.\JAVA-WEB-main\generate_weeks_9_to_13.py: Replace, File input
+.\JAVA-WEB-main\index.html: Replace, File input, Ubuntu Terminal
+.\JAVA-WEB-main\script.js: Replace
+.\JAVA-WEB-main\update_script.py: Replace
+.\JAVA-WEB-main\update_week_7.py: Replace, File input
+.\JAVA-WEB-main\update_week_7_v2.py: Replace, File input
+.\JAVA-WEB-main\pages\crud.html: Replace, File input
+.\JAVA-WEB-main\pages\msaccess-dsn.html: Replace, File input
+.\JAVA-WEB-main\pages\mysql.html: Replace, File input
+.\JAVA-WEB-main\pages\resultset.html: Replace, File input
+.\JAVA-WEB-main\pages\statement.html: Replace, File input
+.\JAVA-WEB-main\pages\week-10.html: Replace, File input
+.\JAVA-WEB-main\pages\week-11.html: Replace, File input
+.\JAVA-WEB-main\pages\week-12.html: Replace, File input
+.\JAVA-WEB-main\pages\week-13.html: Replace, File input
+.\JAVA-WEB-main\pages\week-2.html: Ubuntu Terminal
+.\JAVA-WEB-main\pages\week-3.html: Replace, File input
+.\JAVA-WEB-main\pages\week-4.html: Replace, File input
+.\JAVA-WEB-main\pages\week-5.html: Replace, File input
+.\JAVA-WEB-main\pages\week-6.html: Replace, File input
+.\JAVA-WEB-main\pages\week-7.html: Replace, File input
+.\JAVA-WEB-main\pages\week-8.html: Replace, File input
+.\JAVA-WEB-main\pages\week-9.html: Replace, File input
+.\pages\crud.html: Replace, File input
+.\pages\msaccess-dsn.html: Replace, File input
+.\pages\mysql.html: Replace, File input
+.\pages\resultset.html: Replace, File input
+.\pages\statement.html: Replace, File input
+.\pages\week-10.html: Replace, File input
+.\pages\week-11.html: Replace, File input
+.\pages\week-12.html: Replace, File input
+.\pages\week-13.html: Replace, File input
+.\pages\week-2.html: Ubuntu Terminal
+.\pages\week-3.html: Replace, File input
+.\pages\week-4.html: Replace, File input
+.\pages\week-5.html: Replace, File input
+.\pages\week-6.html: Replace, File input
+.\pages\week-7.html: Replace, File input
+.\pages\week-8.html: Replace, File input
+.\pages\week-9.html: Replace, File input
+.\scratch\find_user_elements.py: Replace, File input, Ubuntu Terminal, Windows CMD
+.\scratch\generate_w0_w1_images.py: Ubuntu Terminal
+.\scratch\patch_script.py: Replace

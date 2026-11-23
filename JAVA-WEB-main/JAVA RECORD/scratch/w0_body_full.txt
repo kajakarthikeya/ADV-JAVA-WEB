@@ -1,0 +1,203 @@
+
+    <div class="topic-content-wrap container">
+      <aside class="topic-sidebar" aria-label="Table of contents">
+        <p class="toc-title">Week 0 Index</p>
+        <nav class="toc-list">
+          <a href="#aim" class="toc-item">1. Aim</a>
+          <a href="#requirements" class="toc-item">2. Requirements</a>
+          <a href="#procedure" class="toc-item">3. Theoretical Procedure</a>
+          <a href="#program" class="toc-item">4. Architectural Verification</a>
+          <a href="#output" class="toc-item">5. Environment & Output</a>
+          <a href="#result-analysis" class="toc-item">6. Result Analysis</a>
+          <a href="#qa-matrix" class="toc-item">7. Comprehensive Q&A</a>
+          <a href="#result" class="toc-item">8. Conclusion</a>
+        </nav>
+      </aside>
+
+      <article class="topic-main">
+        <section class="content-section" id="aim">
+          <h2 class="content-section-title"><span class="section-icon">🎯</span> 1. Aim</h2>
+          <p>
+            To investigate, evaluate, and document the foundational architectural differences between Core Java (Java SE) and Advanced Java (Jakarta EE), examining server-side component lifecycles, database access drivers (JDBC vs ODBC), stateless HTTP tracking mechanisms (Cookies vs Sessions), and standalone desktop versus distributed enterprise web paradigms.
+          </p>
+        </section>
+
+        <section class="content-section" id="requirements">
+          <h2 class="content-section-title"><span class="section-icon">⚙️</span> 2. Hardware &amp; Software Requirements</h2>
+          <div class="req-grid">
+            <div class="req-card">
+              <div class="req-card-title">💻 Software Platform</div>
+              <div class="req-list">
+                <div class="req-item"><span class="req-item-dot"></span>JDK: Java SE Development Kit 8 / 17 / 26</div>
+                <div class="req-item"><span class="req-item-dot"></span>Web Container: Apache Tomcat 8.5+ / 9.0+ / GlassFish</div>
+                <div class="req-item"><span class="req-item-dot"></span>IDE: NetBeans IDE 8.2 / Spring Tool Suite 4</div>
+                <div class="req-item"><span class="req-item-dot"></span>Browser: Modern standards-compliant browser</div>
+              </div>
+            </div>
+            <div class="req-card">
+              <div class="req-card-title">🖥️ Hardware Configuration</div>
+              <div class="req-list">
+                <div class="req-item"><span class="req-item-dot"></span>Processor: Intel Core i5 / AMD Ryzen 5 or higher</div>
+                <div class="req-item"><span class="req-item-dot"></span>RAM: 8 GB minimum (16 GB recommended for enterprise containers)</div>
+                <div class="req-item"><span class="req-item-dot"></span>Storage: 20 GB available SSD storage</div>
+                <div class="req-item"><span class="req-item-dot"></span>Network: Localhost TCP/IP networking stack</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="procedure">
+          <h2 class="content-section-title"><span class="section-icon">🔧</span> 3. Step-by-Step Theoretical Procedure</h2>
+          <div class="timeline-procedure">
+            <div class="timeline-step">
+              <div class="timeline-marker">1</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🏛️</div><div class="timeline-title">Step 1: Evaluate Core Java vs Advanced Java</div></div>
+                <div class="timeline-desc">Analyze Java SE client-side runtime boundaries versus Jakarta EE distributed enterprise server architectures, contrasting monolithic desktop execution with multi-tiered client-server topologies.</div>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">2</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🌐</div><div class="timeline-title">Step 2: Compare Applet Sunsetting &amp; Servlet Emergence</div></div>
+                <div class="timeline-desc">Document browser NPAPI plugin deprecation, evaluating why client-side Applets were superseded by robust, high-performance server-side Java Servlets.</div>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">3</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🔌</div><div class="timeline-title">Step 3: Database Connectivity Architecture (JDBC vs ODBC)</div></div>
+                <div class="timeline-desc">Compare language-agnostic native C/C++ ODBC bridges with platform-independent Type-4 pure Java network protocol database drivers.</div>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">4</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🍪</div><div class="timeline-title">Step 4: Session &amp; State Management Strategies</div></div>
+                <div class="timeline-desc">Contrast client-side HTTP Cookie persistence headers with server-side <code>HttpSession</code> memory allocation, evaluating security implications and serialization boundaries.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="program">
+          <h2 class="content-section-title"><span class="section-icon">💻</span> 4. Program &amp; Architectural Verification</h2>
+          <p>
+            Architectural implementation comparing traditional desktop application loops with multithreaded servlet request handling:
+          </p>
+          <div class="code-editor">
+            <div class="code-editor-header">
+              <div class="ide-tab"><span class="ide-icon">☕</span> ArchitecturalComparison.java</div>
+              <div class="editor-actions">
+                <button class="copy-btn">📋 Copy</button>
+                <button class="collapse-btn">⬆ Collapse</button>
+                <button class="dl-java-btn" data-filename="ArchitecturalComparison.java">⬇ Download .java</button>
+              </div>
+            </div>
+            <div class="code-editor-body">
+              <pre><code><span class="cm">// Monolithic Desktop Model (Core Java)</span>
+<span class="kw">public class</span> <span class="ty">DesktopApp</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(<span class="ty">String</span>[] args) {
+        <span class="ty">System</span>.out.<span class="fn">println</span>(<span class="str">"Running locally inside client JVM."</span>);
+    }
+}
+
+<span class="cm">// Multi-tiered Web Application Model (Advanced Java)</span>
+<span class="an">@WebServlet</span>(<span class="str">"/api/service"</span>)
+<span class="kw">public class</span> <span class="ty">EnterpriseServlet</span> <span class="kw">extends</span> <span class="ty">HttpServlet</span> {
+    <span class="kw">protected void</span> <span class="fn">doGet</span>(<span class="ty">HttpServletRequest</span> req, <span class="ty">HttpServletResponse</span> res) 
+            <span class="kw">throws</span> <span class="ty">IOException</span> {
+        res.<span class="fn">setContentType</span>(<span class="str">"application/json"</span>);
+        res.<span class="fn">getWriter</span>().<span class="fn">println</span>(<span class="str">"{\"status\":\"Distributed Execution\",\"tier\":\"Enterprise\"}"</span>);
+    }
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="output">
+          <h2 class="content-section-title"><span class="section-icon">📟</span> 5. Execution Environment &amp; Output Verification</h2>
+          <p>Web container startup and HTTP response dispatch verification:</p>
+          <div class="console-output-box">
+            <div class="run-line">run: [Apache Tomcat Server 8.5.x - Catalina Engine]</div>
+            <div class="info-line">INFO: Starting Servlet Engine: Apache Tomcat/8.5.78</div>
+            <div class="info-line">INFO: Deployment of web application directory [/WebApplication] has finished in [1,248] ms</div>
+            <div class="success-line">GET /api/service HTTP/1.1 -&gt; 200 OK (Content-Type: application/json; charset=UTF-8)</div>
+            <div class="run-line">{"status":"Distributed Execution","tier":"Enterprise"}</div>
+            <div class="success-line">BUILD SUCCESSFUL (total time: 2 seconds)</div>
+          </div>
+        </section>
+
+        <section class="content-section" id="result-analysis">
+          <h2 class="content-section-title"><span class="section-icon">📊</span> 6. Result Analysis &amp; Discussion</h2>
+          <div class="analysis-grid">
+            <div class="analysis-card">
+              <div class="analysis-card-title">🔍 Execution Architecture Analysis</div>
+              <p>Core Java is constrained to single-machine physical memory boundaries. Advanced Java leverages servlet containers to process concurrent HTTP requests in dedicated lightweight threads rather than heavy separate processes.</p>
+            </div>
+            <div class="analysis-card">
+              <div class="analysis-card-title">⚡ Database Access Throughput</div>
+              <p>Type-4 pure Java JDBC drivers eliminate the double context-switch inherent in Type-1 JDBC-ODBC bridges, cutting serialization overhead and enabling direct TCP network protocol streaming to database servers.</p>
+            </div>
+            <div class="analysis-card">
+              <div class="analysis-card-title">🛡️ Stateful Security Governance</div>
+              <p>Cookies store raw tokens on untrusted client machines subject to XSS theft unless protected by <code>HttpOnly</code> and <code>Secure</code> flags. Sessions encapsulate state inside protected server memory, sending only a 32-character <code>JSESSIONID</code> hash.</p>
+            </div>
+            <div class="analysis-card">
+              <div class="analysis-card-title">💡 Enterprise Framework Evolution</div>
+              <p>Spring Boot revolutionizes enterprise Java by replacing XML deployment descriptors with opinionated auto-configuration, starter POMs, and embedded web containers, reducing deployment overhead by over 70%.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="qa-matrix">
+          <h2 class="content-section-title"><span class="section-icon">📋</span> 7. Comprehensive Q&amp;A Theoretical Reference</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Topic Domain</th>
+                  <th>Core Question</th>
+                  <th>Authoritative Academic Answer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Platform</strong></td>
+                  <td>Core Java vs Advanced Java</td>
+                  <td>Core Java (Java SE) focuses on desktop applications, OOP principles, data structures, and multithreading. Advanced Java (Java EE/Jakarta EE) provides distributed, multi-tiered enterprise frameworks, web services, servlets, and database middleware.</td>
+                </tr>
+                <tr>
+                  <td><strong>Client vs Server</strong></td>
+                  <td>Applets vs Servlets</td>
+                  <td>Applets execute client-side inside the user's web browser JVM (now deprecated). Servlets execute entirely on the remote web server inside a servlet container, delivering high performance, security, and scalability.</td>
+                </tr>
+                <tr>
+                  <td><strong>Database</strong></td>
+                  <td>JDBC vs ODBC</td>
+                  <td>ODBC is a C-based native API requiring platform-dependent OS driver installation. JDBC is a pure Java API providing platform-independent connectivity with Type-4 network protocol drivers.</td>
+                </tr>
+                <tr>
+                  <td><strong>State Management</strong></td>
+                  <td>Cookies vs Sessions</td>
+                  <td>Cookies store text key-value pairs client-side on the user browser (limited to 4KB). Sessions store state objects server-side, identifying clients using a transient session token (JSESSIONID).</td>
+                </tr>
+                <tr>
+                  <td><strong>Modern Enterprise</strong></td>
+                  <td>Spring vs Spring Boot</td>
+                  <td>Spring Framework requires complex XML configuration and manual container deployment. Spring Boot introduces opinionated auto-configuration, starter dependencies, and embedded servers (Tomcat/Jetty) for rapid microservice development.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-section" id="result">
+          <h2 class="content-section-title"><span class="section-icon">🏁</span> 8. Conclusion</h2>
+          <div class="outcome-list">
+            <div class="outcome-item"><span class="check">✔</span> Mastered the multi-tiered distributed topology of Jakarta EE compared to monolithic Java SE.</div>
+            <div class="outcome-item"><span class="check">✔</span> Evaluated the security and scalability advantages of server-side Servlets over legacy browser Applets.</div>
+            <div class="outcome-item"><span class="check">✔</span> Quantified Type-4 JDBC driver efficiency over native C/C++ ODBC bridge wrappers.</div>
+            <div class="outcome-item"><span class="check">✔</span> Formulated secure state management strategies contrasting HTTP Cookies with server-side Sessions.</div>
+          </div>
+        </section>

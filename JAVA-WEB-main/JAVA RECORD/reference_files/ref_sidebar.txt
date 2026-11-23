@@ -1,0 +1,71 @@
+Side Navigation Bar -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h3>Lab Contents</h3>
+        </div>
+        <div class="nav-items">
+            <a href="#introduction" class="nav-item">Introduction</a>
+            <a href="#java-msaccess" class="nav-item">Java & MS Access Connection</a>
+            <a href="#jdbc-mysql" class="nav-item">JDBC MySQL Connection</a>
+            <a href="#crud-operations" class="nav-item">CRUD Operations</a>
+            <a href="#jdbc-odbc-bridge" class="nav-item">JDBC-ODBC Bridge</a>
+            <a href="#servlets" class="nav-item">Java Servlets</a>
+            <a href="#cookies-sessions" class="nav-item">Cookies & Sessions</a>
+            <a href="#spring-boot" class="nav-item">Spring Boot Framework</a>
+            <a href="#jdbc-mysql-spring" class="nav-item">JDBC with MySQL</a>
+            <a href="#spring-jpa-h2" class="nav-item">Spring JPA with H2</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h2>Welcome to Advanced Java Lab Record</h2>
+            <p>Explore the comprehensive guide to Advanced Java concepts and technologies.</p>
+            
+            <!-- Introduction Section -->
+            <section id="introduction" class="lab-section">
+                <h3>🚀 Introduction to Advanced Java</h3>
+                
+                <div class="topic-grid">
+                    <!-- Topic 1 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Core Java vs Advanced Java</h4>
+                            <span class="topic-icon">☕</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h5>Core Java</h5>
+                                    <ul>
+                                        <li>Basic syntax and OOP concepts</li>
+                                        <li>Data types, variables, operators</li>
+                                        <li>Control structures and methods</li>
+                                        <li>Exception handling</li>
+                                        <li>Collections framework</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h5>Advanced Java</h5>
+                                    <ul>
+                                        <li>Web development (Servlets, JSP)</li>
+                                        <li>Database connectivity (JDBC)</li>
+                                        <li>Enterprise applications (EJB)</li>
+                                        <li>Frameworks (Spring, Hibernate)</li>
+                                        <li>Web services and APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 2 -->
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h4>Java Applets Features</h4>
+                            <span class="topic-icon">🖥️</span>
+                        </div>
+                        <div class="topic-content">
+                            <div class="feature-list">
+                       

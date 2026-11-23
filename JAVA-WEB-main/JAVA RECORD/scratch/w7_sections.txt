@@ -1,0 +1,11 @@
+ID: aim | Title: <span class="section-icon">🎯</span> 1. Aim
+ID: requirements | Title: <span class="section-icon">⚙️</span> 2. Software Requirement
+ID: procedure | Title: <span class="section-icon">🔧</span> 3. Step-by-Step Procedur
+ID: activity-1 | Title: <span class="section-icon">📁</span> 4. Activity 1: NetBeans 
+ID: activity-2 | Title: <span class="section-icon">☕</span> 5. Activity 2: HTTP Serv
+ID: activity-3 | Title: <span class="section-icon">🔄</span> 6. Activity 3: GET &amp;
+ID: activity-4 | Title: <span class="section-icon">⚙️</span> 7. Activity 4: Generic 
+ID: activity-5 | Title: <span class="section-icon">⏳</span> 8. Activity 5: Servlet L
+ID: activity-6 | Title: <span class="section-icon">📋</span> 9. Activity 6: Interacti
+ID: result-analysis | Title: <span class="section-icon">📊</span> 10. Result Analysis &amp
+ID: screenshots | Title: <span class="section-icon">🏁</span> 12. Conclusion

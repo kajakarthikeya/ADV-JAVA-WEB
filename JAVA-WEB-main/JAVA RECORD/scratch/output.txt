@@ -1,0 +1,31 @@
+--- Modal in index.html ---
+ IMAGE ZOOM MODAL -->
+  <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-label="Screenshot zoom view">
+    <div class="ss-modal-backdrop"></div>
+    <div class="ss-modal-content">
+      <div class="ss-modal-header">
+        <h4 class="ss-modal-title" id="ssModalTitle">Figure Preview</h4>
+        <div class="ss-modal-actions">
+          <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+          <button class="ss-modal-close" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="ss-modal-body">
+        <img src="" alt="Fullscreen screenshot" id=
+
+--- Downloads section in index.html ---
+E SECTION -->
+      <section class="task-section" id="downloads" style="margin-top:48px;">
+        <div class="task-header-block">
+          <div class="task-pretitle">LAB REPOSITORY RESOURCES</div>
+          <h2 class="task-display-title">Authoritative Lab Source Code &amp; Documentation Downloads</h2>
+          <p style="font-size:0.9rem;color:#64748B;margin-top:4px;">All source code files (.java), Maven build descriptors (pom.xml), and lab records for 24EU08161:</p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:16px;">
+          <div class="step-card" style="padding
+
+--- Search for zoom-modal or ss-modal ---
+zoom-modal in index.html: False
+ss-modal in index.html: True
+ssModal in index.html: True

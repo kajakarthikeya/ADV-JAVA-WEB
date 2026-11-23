@@ -1,0 +1,290 @@
+=== week-0 ===
+  Task: task-1 (10 steps)
+    Step 01: Core Java vs Advanced Java Runtime Architecture -> file: step-01.png
+    Step 02: Applet Sunsetting vs Modern Java Servlets -> file: step-02.png
+    Step 03: GenericServlet vs HttpServlet Hierarchy -> file: step-03.png
+    Step 04: JDBC Type-4 vs ODBC Driver Architecture -> file: step-04.png
+    Step 05: HTTP State Management: Cookies vs Sessions -> file: step-05.png
+    Step 06: Spring Boot Auto-Configuration vs Spring Core IoC -> file: step-06.png
+    Step 07: Apache Tomcat Port 8080 Listener Verification -> file: step-07.png
+    Step 08: Standalone Desktop JAR vs Enterprise WAR Deployment -> file: step-08.png
+    Step 09: Java Database Connection Pipeline Execution -> file: step-09.png
+    Step 10: Theoretical Architectural Synthesis Verification -> file: step-10.png
+=== week-1 ===
+  Task: task-1 (10 steps)
+    Step 01: Multi-Language Benchmark Execution -> file: step-01.png
+    Step 02: Java Bytecode Disassembly & JVM Stack Inspection -> file: step-02.png
+    Step 03: NetBeans IDE Web Project Architecture Layout -> file: step-03.png
+    Step 04: Standard Web Deployment Descriptor (web.xml) -> file: step-04.png
+    Step 05: HTTP Request-Response Lifecycle Inspection -> file: step-05.png
+    Step 06: JVM Heap & Memory Layout Verification -> file: step-06.png
+    Step 07: Java Classpath & Dependency Linking -> file: step-07.png
+    Step 08: Multi-Tier Web Topology Verification -> file: step-08.png
+    Step 09: JIT Compiler HotSpot Optimization Trace -> file: step-09.png
+    Step 10: Final Academic Synthesis Verification -> file: step-10.png
+=== week-2 ===
+  Task: task-1 (16 steps)
+    Step 01: Launch Ubuntu Terminal -> file: step-01.png
+    Step 02: Update Package Index -> file: step-02.png
+    Step 03: Create JVM Target Directory -> file: step-03.png
+    Step 04: Download OpenJDK 26 Tarball -> file: step-04.png
+    Step 05: Verify SHA256 Checksum -> file: step-05.png
+    Step 06: Extract JDK Archive -> file: step-06.png
+    Step 07: Verify Extracted File Tree -> file: step-07.png
+    Step 08: Register java Binary -> file: step-08.png
+    Step 09: Register javac Compiler -> file: step-09.png
+    Step 10: Configure Alternatives Selection -> file: step-10.png
+    Step 11: Configure JAVA_HOME in /etc/environment -> file: step-11.png
+    Step 12: Reload System Environment -> file: step-12.png
+    Step 13: Update Shell PATH in ~/.bashrc -> file: step-13.png
+    Step 14: Verify java Runtime Version -> file: step-14.png
+    Step 15: Verify javac Compiler Version -> file: step-15.png
+    Step 16: Compile & Run Test Program -> file: step-16.png
+=== week-3 ===
+  Task: task-1 (16 steps)
+    Step 01: Initialize Command Prompt -> file: step-01.png
+    Step 02: Create Project Subdirectories -> file: step-02.png
+    Step 03: Download UCanAccess JARs -> file: step-03.png
+    Step 04: Verify Classpath Dependencies -> file: step-04.png
+    Step 05: Create MS Access Database -> file: step-05.png
+    Step 06: Design Users Table Schema -> file: step-06.png
+    Step 07: Pre-populate Test Records -> file: step-07.png
+    Step 08: Author AccessDemo.java -> file: step-08.png
+    Step 09: Load UCanAccess Driver -> file: step-09.png
+    Step 10: Define Access Connection URL -> file: step-10.png
+    Step 11: Author SQL SELECT Query -> file: step-11.png
+    Step 12: Configure CLASSPATH Variable -> file: step-12.png
+    Step 13: Compile AccessDemo.java -> file: step-13.png
+    Step 14: Execute Program via java -> file: step-14.png
+    Step 15: Verify Formatted Record Output -> file: step-15.png
+    Step 16: Clean Resource Closure -> file: step-16.png
+=== week-4 ===
+  Task: task-1 (16 steps)
+    Step 01: Launch NetBeans IDE 8.2 -> file: step-01.png
+    Step 02: Create Java Application Project -> file: step-02.png
+    Step 03: Add MySQL Connector/J Library -> file: step-03.png
+    Step 04: Ping Remote MySQL Server -> file: step-04.png
+    Step 05: Configure JDBC Connection URL -> file: step-05.png
+    Step 06: Load MySQL Driver -> file: step-06.png
+    Step 07: Establish Socket Connection -> file: step-07.png
+    Step 08: Create Statement Object -> file: step-08.png
+    Step 09: Execute INSERT Query -> file: step-09.png
+    Step 10: Verify Insert Console Output -> file: step-10.png
+    Step 11: Execute SELECT Query -> file: step-11.png
+    Step 12: Parse ResultSet Columns -> file: step-12.png
+    Step 13: Execute UPDATE Query -> file: step-13.png
+    Step 14: Verify Remote Updated Data -> file: step-14.png
+    Step 15: Execute DELETE Query -> file: step-15.png
+    Step 16: Close Sockets & Build Success -> file: step-16.png
+=== week-5 ===
+  Task: task-1 (16 steps)
+    Step 01: Open NetBeans Remote Workspace -> file: step-01.png
+    Step 02: Verify JDBC Driver in Tree -> file: step-02.png
+    Step 03: Connect to Remote MySQL Host -> file: step-03.png
+    Step 04: Author DatabaseOperations.java -> file: step-04.png
+    Step 05: Implement PreparedStatement -> file: step-05.png
+    Step 06: Bind SQL Parameters -> file: step-06.png
+    Step 07: Execute PreparedStatement Update -> file: step-07.png
+    Step 08: Verify Record Persistence -> file: step-08.png
+    Step 09: Implement Dynamic Query Filter -> file: step-09.png
+    Step 10: Execute Parameterized Search -> file: step-10.png
+    Step 11: Perform Transactional Batch Update -> file: step-11.png
+    Step 12: Commit Database Transaction -> file: step-12.png
+    Step 13: Inspect Database Metadata -> file: step-13.png
+    Step 14: Execute Parameterized DELETE -> file: step-14.png
+    Step 15: Clean Socket Termination -> file: step-15.png
+    Step 16: Verify Final Console Output -> file: step-16.png
+=== week-6 ===
+  Task: task-1 (18 steps)
+    Step 01: MySQL CLI Root Login -> file: step-01.png
+    Step 02: Create Database studentdb -> file: step-02.png
+    Step 03: Switch to Database Context -> file: step-03.png
+    Step 04: Create Student Table -> file: step-04.png
+    Step 05: Verify Table Schema -> file: step-05.png
+    Step 06: Create NetBeans Project -> file: step-06.png
+    Step 07: Add MySQL Connector/J -> file: step-07.png
+    Step 08: Write StudentCRUD.java -> file: step-08.png
+    Step 09: Implement getConnection() -> file: step-09.png
+    Step 10: Implement INSERT Operation -> file: step-10.png
+    Step 11: Execute INSERT in NetBeans -> file: step-11.png
+    Step 12: Verify Record in MySQL CLI -> file: step-12.png
+    Step 13: Implement SELECT Operation -> file: step-13.png
+    Step 14: Execute SELECT & View Records -> file: step-14.png
+    Step 15: Implement UPDATE Operation -> file: step-15.png
+    Step 16: Verify UPDATE in MySQL CLI -> file: step-16.png
+    Step 17: Implement DELETE Operation -> file: step-17.png
+    Step 18: Final CRUD Execution Report -> file: step-18.png
+=== week-7 ===
+  Task: task-1 (2 steps)
+    Step 01: NetBeans WebApp Wizard -> file: step-01.png
+    Step 02: Configure index.html -> file: step-02.png
+  Task: task-2 (5 steps)
+    Step 01: Author NewServlet.java Code -> file: step-01.png
+    Step 02: Browser Runtime Output -> file: step-02.png
+    Step 03: NetBeans Project Hierarchy -> file: step-03.png
+    Step 04: NewServlet2.java Code -> file: step-04.png
+    Step 05: NewServlet2 Browser Output -> file: step-05.png
+  Task: task-3 (4 steps)
+    Step 01: Author GET/POST HTML Form -> file: step-01.png
+    Step 02: Author GetPostServlet.java -> file: step-02.png
+    Step 03: HTTP GET Request Output -> file: step-03.png
+    Step 04: HTTP POST Request Output -> file: step-04.png
+  Task: task-4 (2 steps)
+    Step 01: Author MyGenericServlet.java -> file: step-01.png
+    Step 02: Generic Servlet Output -> file: step-02.png
+  Task: task-5 (2 steps)
+    Step 01: Author LifeCycleServlet.java -> file: step-01.png
+    Step 02: Servlet Lifecycle Output -> file: step-02.png
+  Task: task-6 (4 steps)
+    Step 01: Student Form HTML Code -> file: step-01.png
+    Step 02: Browser Form Filled (karthik, 161, it) -> file: step-02.png
+    Step 03: StudentFormServlet.java Code -> file: step-03.png
+    Step 04: Student Form Submission Output -> file: step-04.png
+=== week-8 ===
+  Task: task-1 (16 steps)
+    Step 01: Initialize Web App in NetBeans -> file: step-01.png
+    Step 02: Configure Tomcat 8.5 Server -> file: step-02.png
+    Step 03: Create student_mgmt MySQL Database -> file: step-03.png
+    Step 04: Add MySQL Driver to WEB-INF/lib -> file: step-04.png
+    Step 05: Implement DBConnection Singleton -> file: step-05.png
+    Step 06: Implement AddStudentServlet -> file: step-06.png
+    Step 07: Author add_student.html Form -> file: step-07.png
+    Step 08: Implement DisplayStudentServlet -> file: step-08.png
+    Step 09: Implement SearchStudentServlet -> file: step-09.png
+    Step 10: Implement UpdateStudentServlet -> file: step-10.png
+    Step 11: Implement DeleteStudentServlet -> file: step-11.png
+    Step 12: Deploy WAR to Tomcat -> file: step-12.png
+    Step 13: Test Browser Form Ingestion -> file: step-13.png
+    Step 14: View Student List Table -> file: step-14.png
+    Step 15: Test Search by Roll Number -> file: step-15.png
+    Step 16: Verify MySQL Persistence -> file: step-16.png
+  Task: task-2 (12 steps)
+    Step 01: Create CookieDemoApp Project -> file: step-01.png
+    Step 02: Author login.html Form -> file: step-02.png
+    Step 03: Implement CookieServlet -> file: step-03.png
+    Step 04: Extract Request Parameters -> file: step-04.png
+    Step 05: Instantiate Cookie Object -> file: step-05.png
+    Step 06: Configure Cookie Max-Age -> file: step-06.png
+    Step 07: Add Cookie to HTTP Response -> file: step-07.png
+    Step 08: Implement WelcomeServlet -> file: step-08.png
+    Step 09: Iterate Over Request Cookies -> file: step-09.png
+    Step 10: Extract Stored Cookie Value -> file: step-10.png
+    Step 11: Inspect Browser DevTools Cookies -> file: step-11.png
+    Step 12: View Welcome Message in Browser -> file: step-12.png
+=== week-9 ===
+  Task: task-1 (15 steps)
+    Step 01: Launch Spring Tool Suite 4 -> file: step-01.png
+    Step 02: New Spring Starter Project -> file: step-02.png
+    Step 03: Configure Group & Artifact ID -> file: step-03.png
+    Step 04: Select Java Version -> file: step-04.png
+    Step 05: Select Spring Web Dependency -> file: step-05.png
+    Step 06: Inspect Project File Hierarchy -> file: step-06.png
+    Step 07: Inspect Application Main Class -> file: step-07.png
+    Step 08: Configure application.properties -> file: step-08.png
+    Step 09: Maven Update Project -> file: step-09.png
+    Step 10: Run Maven Clean Install -> file: step-10.png
+    Step 11: Verify BUILD SUCCESS Console -> file: step-11.png
+    Step 12: Run as Spring Boot App -> file: step-12.png
+    Step 13: Inspect Spring Boot Banner -> file: step-13.png
+    Step 14: Verify Tomcat Started on 8080 -> file: step-14.png
+    Step 15: Browser Verification at localhost:8080 -> file: step-15.png
+  Task: task-2 (12 steps)
+    Step 01: Create Web Controller Package -> file: step-01.png
+    Step 02: Author HelloController.java -> file: step-02.png
+    Step 03: Implement @GetMapping Method -> file: step-03.png
+    Step 04: Inject Roll Number 24EU08161 -> file: step-04.png
+    Step 05: Implement Parameterized Endpoint -> file: step-05.png
+    Step 06: Save Source Files -> file: step-06.png
+    Step 07: Spring DevTools Live Reload -> file: step-07.png
+    Step 08: Test Root Endpoint in Browser -> file: step-08.png
+    Step 09: Test Greet Endpoint with Query Param -> file: step-09.png
+    Step 10: Verify JSON Serialization -> file: step-10.png
+    Step 11: Inspect STS Access Logs -> file: step-11.png
+    Step 12: Final Web App Verification -> file: step-12.png
+  Task: task-3 (12 steps)
+    Step 01: Open POM.xml in STS -> file: step-01.png
+    Step 02: Inspect Parent Starter POM -> file: step-02.png
+    Step 03: Inspect Project Coordinates -> file: step-03.png
+    Step 04: Inspect Java Version Property -> file: step-04.png
+    Step 05: Inspect spring-boot-starter-web -> file: step-05.png
+    Step 06: Inspect spring-boot-starter-test -> file: step-06.png
+    Step 07: Add Spring Boot Maven Plugin -> file: step-07.png
+    Step 08: Save POM.xml Changes -> file: step-08.png
+    Step 09: Inspect Maven Dependencies Tree -> file: step-09.png
+    Step 10: Execute Maven Build in STS -> file: step-10.png
+    Step 11: Verify Generated JAR in target/ -> file: step-11.png
+    Step 12: Verify BUILD SUCCESS -> file: step-12.png
+=== week-10 ===
+  Task: task-1 (16 steps)
+    Step 01: Open STS Workspace -> file: step-01.png
+    Step 02: Create Spring Starter Project -> file: step-02.png
+    Step 03: Configure Dependencies (JDBC, H2) -> file: step-03.png
+    Step 04: Inspect pom.xml Dependencies -> file: step-04.png
+    Step 05: Configure application.properties -> file: step-05.png
+    Step 06: Implement Author.java Entity -> file: step-06.png
+    Step 07: Create AuthorService.java -> file: step-07.png
+    Step 08: Inject JdbcTemplate -> file: step-08.png
+    Step 09: Implement @PostConstruct Hook -> file: step-09.png
+    Step 10: Execute DDL Table Creation -> file: step-10.png
+    Step 11: Implement Batch Insert -> file: step-11.png
+    Step 12: Implement Query with RowMapper -> file: step-12.png
+    Step 13: Run Application in STS -> file: step-13.png
+    Step 14: Inspect SLF4J Console Logs -> file: step-14.png
+    Step 15: Open H2 Web Console in Browser -> file: step-15.png
+    Step 16: Execute SQL Query in H2 Console -> file: step-16.png
+=== week-11 ===
+  Task: task-1 (16 steps)
+    Step 01: Open STS 4 Workspace -> file: step-01.png
+    Step 02: Configure Dependencies (JPA, MySQL) -> file: step-02.png
+    Step 03: Create MySQL Database employee_db -> file: step-03.png
+    Step 04: Configure application.properties -> file: step-04.png
+    Step 05: Implement Employee.java Entity -> file: step-05.png
+    Step 06: Create EmployeeRepository Interface -> file: step-06.png
+    Step 07: Implement EmployeeRestController -> file: step-07.png
+    Step 08: Implement EmployeeViewController -> file: step-08.png
+    Step 09: Author employees.html Thymeleaf View -> file: step-09.png
+    Step 10: Run Spring Boot App -> file: step-10.png
+    Step 11: Inspect Hibernate DDL Console Logs -> file: step-11.png
+    Step 12: Verify Table Schema in MySQL -> file: step-12.png
+    Step 13: Open Browser Thymeleaf UI -> file: step-13.png
+    Step 14: Verify Formatted Employee Table -> file: step-14.png
+    Step 15: Test REST JSON Endpoint -> file: step-15.png
+    Step 16: Verify REST JSON Array Output -> file: step-16.png
+=== week-12 ===
+  Task: task-1 (16 steps)
+    Step 01: Open STS 4 Workspace -> file: step-01.png
+    Step 02: Configure Dependencies (JPA, H2) -> file: step-02.png
+    Step 03: Configure application.properties -> file: step-03.png
+    Step 04: Implement Student.java Entity -> file: step-04.png
+    Step 05: Create StudentRepository Interface -> file: step-05.png
+    Step 06: Implement StudentController Class -> file: step-06.png
+    Step 07: Implement @PostMapping Endpoint -> file: step-07.png
+    Step 08: Implement @GetMapping Endpoint -> file: step-08.png
+    Step 09: Run Spring Boot Application -> file: step-09.png
+    Step 10: Inspect Console Startup Logs -> file: step-10.png
+    Step 11: Submit Student Record via Browser -> file: step-11.png
+    Step 12: Verify HTTP 200 Confirmation -> file: step-12.png
+    Step 13: Retrieve All Students in Browser -> file: step-13.png
+    Step 14: Verify JSON Array Output -> file: step-14.png
+    Step 15: Access H2 Web Console -> file: step-15.png
+    Step 16: Query Student Table in H2 -> file: step-16.png
+=== week-13 ===
+  Task: task-1 (18 steps)
+    Step 01: Open STS 4 Workspace -> file: step-01.png
+    Step 02: Configure Dependencies -> file: step-02.png
+    Step 03: Implement Student Entity -> file: step-03.png
+    Step 04: Open StudentRepository Interface -> file: step-04.png
+    Step 05: Declare findByFirstName Query -> file: step-05.png
+    Step 06: Declare OrderBy Derived Query -> file: step-06.png
+    Step 07: Declare Compound AND Query -> file: step-07.png
+    Step 08: Declare Compound OR Query -> file: step-08.png
+    Step 09: Declare Custom JPQL @Query -> file: step-09.png
+    Step 10: Declare Native SQL @Query -> file: step-10.png
+    Step 11: Implement QueryController -> file: step-11.png
+    Step 12: Run Application & Preload Data -> file: step-12.png
+    Step 13: Test findByFirstName in Browser -> file: step-13.png
+    Step 14: Test OrderBy Query in Browser -> file: step-14.png
+    Step 15: Test Compound Queries in Browser -> file: step-15.png
+    Step 16: Test Native SQL Query in Browser -> file: step-16.png
+    Step 17: Inspect Hibernate SQL in Console -> file: step-17.png
+    Step 18: Verify Execution Metrics -> file: step-18.png

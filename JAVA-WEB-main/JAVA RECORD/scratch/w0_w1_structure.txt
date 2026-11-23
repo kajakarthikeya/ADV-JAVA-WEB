@@ -1,0 +1,23 @@
+w0_body length: 13927
+Does w0 have result-analysis? True
+Headings in w0:
+  - <span class="section-icon">🎯</span> 1. Aim
+  - <span class="section-icon">⚙️</span> 2. Hardware &amp; Software Requirements
+  - <span class="section-icon">🔧</span> 3. Step-by-Step Theoretical Procedure
+  - <span class="section-icon">💻</span> 4. Program &amp; Architectural Verification
+  - <span class="section-icon">📟</span> 5. Execution Environment &amp; Output Verification
+  - <span class="section-icon">📊</span> 6. Result Analysis &amp; Discussion
+  - <span class="section-icon">📋</span> 7. Comprehensive Q&amp;A Theoretical Reference
+  - <span class="section-icon">🏁</span> 8. Conclusion
+
+w1_body length: 13053
+Does w1 have result-analysis? True
+Headings in w1:
+  - <span class="section-icon">🎯</span> 1. Aim
+  - <span class="section-icon">⚙️</span> 2. Hardware &amp; Software Requirements
+  - <span class="section-icon">🔧</span> 3. Step-by-Step Evaluation Procedure
+  - <span class="section-icon">💻</span> 4. Program &amp; Paradigm Verification
+  - <span class="section-icon">📟</span> 5. Execution Benchmark Outputs
+  - <span class="section-icon">📊</span> 6. Result Analysis &amp; Discussion
+  - <span class="section-icon">📊</span> 7. Comprehensive Comparative Matrix
+  - <span class="section-icon">🏁</span> 8. Conclusion

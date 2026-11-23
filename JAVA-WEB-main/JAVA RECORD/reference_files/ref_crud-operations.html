@@ -1,0 +1,569 @@
+<section id="crud-operations" class="lab-section">
+                <h3>📊 CRUD Operations with MySQL</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to implement complete CRUD (Create, Read, Update, Delete) operations on MySQL tables using Java applications. This comprehensive tutorial covers Statement, PreparedStatement, and CallableStatement implementations.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To implement the following CRUD operations on tables using MySQL and accessing the created database and tables using drivers and localhost using Java applications.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Initial Setup -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Project Setup</h4>
+                            </div>
+                            <div class="step-content">
+                                <ul class="setup-list">
+                                    <li>Open your IDE and create a new Java project</li>
+                                    <li>Select Java Standalone Application</li>
+                                    <li>Provide a meaningful project name (e.g., JDBC_Crud_Week4)</li>
+                                    <li>The project page will be displayed with source folders, libraries, and configuration options</li>
+                                    <li>Right-click Libraries and add the required MySQL JDBC driver to enable database connectivity</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- Program 1 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 1</span>
+                                <h4>CRUD Operations on Student Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Insert, display, update, and delete records in the student table.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ Database Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE DATABASE 238w1a1275;
+USE 238w1a1275;
+CREATE TABLE student (
+    rollno INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image15.png" alt="Student Table Setup" class="step-image">
+                                    <div class="image-caption">Creating student table in MySQL</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+            
+            // INSERT Operation
+            stmt.executeUpdate("INSERT INTO student VALUES (1, 'Alice', 85.5)");
+            System.out.println("Record inserted.");
+            
+            // SELECT Operation
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+            System.out.println("\nRollNo\tName\tMarks");
+            while (rs.next()) {
+                System.out.println(rs.getInt(1) + "\t" +
+                                   rs.getString(2) + "\t" +
+                                   rs.getDouble(3));
+            }
+            
+            // UPDATE Operation
+            stmt.executeUpdate("UPDATE student SET marks = 90 WHERE rollno = 1");
+            System.out.println("Record updated.");
+            
+            // DELETE Operation
+            stmt.executeUpdate("DELETE FROM student WHERE rollno = 1");
+            System.out.println("Record deleted.");
+            
+            rs.close();
+            stmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image16.png" alt="Student CRUD Output" class="step-image">
+                                    <div class="image-caption">Output showing CRUD operations on student table</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 2 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 2</span>
+                                <h4>Insert Data Using CallableStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Insert data into Person table using stored procedure.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Person (
+    PersonID INT PRIMARY KEY,
+    FirstName VARCHAR(255),
+    City VARCHAR(255)
+);
+
+DELIMITER $$
+CREATE PROCEDURE insert_person(
+    IN pid INT,
+    IN fname VARCHAR(255),
+    IN cityname VARCHAR(255)
+)
+BEGIN
+    INSERT INTO Person (PersonID, FirstName, City)
+    VALUES (pid, fname, cityname);
+END $$
+DELIMITER ;</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image17.png" alt="Person Table Setup" class="step-image">
+                                    <div class="image-caption">Creating Person table and stored procedure</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            // CallableStatement for stored procedure
+            CallableStatement cstmt = con.prepareCall("{call insert_person(?, ?, ?)}");
+            cstmt.setInt(1, 1);
+            cstmt.setString(2, "John");
+            cstmt.setString(3, "New York");
+            
+            int rowsInserted = cstmt.executeUpdate();
+            System.out.println(rowsInserted + " record(s) inserted.");
+            
+            // Display inserted data
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Person");
+            System.out.println("\nPersonID\tFirstName\tCity");
+            while (rs.next()) {
+                System.out.println(rs.getInt("PersonID") + "\t\t" +
+                                   rs.getString("FirstName") + "\t\t" +
+                                   rs.getString("City"));
+            }
+            
+            rs.close();
+            stmt.close();
+            cstmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image18.png" alt="CallableStatement Output" class="step-image">
+                                    <div class="image-caption">Output showing CallableStatement execution</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 3 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 3</span>
+                                <h4>Select Employees With Salary > X Using PreparedStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE employee (
+    empno INT PRIMARY KEY,
+    ename VARCHAR(50),
+    salary DOUBLE
+);
+
+INSERT INTO employee VALUES
+(101, 'Alice', 50000),
+(102, 'Bob', 60000),
+(103, 'Charlie', 45000);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image19.png" alt="Employee Table Setup" class="step-image">
+                                    <div class="image-caption">Creating and populating employee table</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+import java.util.Scanner;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter salary value X: ");
+            double x = sc.nextDouble();
+            
+            String query = "SELECT empno, ename, salary FROM employee WHERE salary > ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setDouble(1, x);
+            
+            ResultSet rs2 = pstmt.executeQuery();
+            System.out.println("\nSerial\tEmpNo\tName\tSalary");
+            int serial = 1;
+            while (rs2.next()) {
+                System.out.println(serial++ + "\t" +
+                                   rs2.getInt("empno") + "\t" +
+                                   rs2.getString("ename") + "\t" +
+                                   rs2.getDouble("salary"));
+            }
+            
+            rs2.close();
+            pstmt.close();
+            con.close();
+            sc.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image20.png" alt="PreparedStatement Output" class="step-image">
+                                    <div class="image-caption">Output showing filtered employee records</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 4 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 4</span>
+                                <h4>Insert and Display Data From Product Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE product (
+    serial_no INT PRIMARY KEY,
+    product_no INT,
+    product_name VARCHAR(255),
+    price DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            String insertQuery = "INSERT INTO product (serial_no, product_no, product_name, price) VALUES (?, ?, ?, ?)";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            
+            // Insert multiple products
+            pstmt.setInt(1, 1); pstmt.setInt(2, 101); pstmt.setString(3, "Laptop"); pstmt.setDouble(4, 55000);
+            pstmt.executeUpdate();
+            
+            pstmt.setInt(1, 2); pstmt.setInt(2, 102); pstmt.setString(3, "Mobile"); pstmt.setDouble(4, 15000);
+            pstmt.executeUpdate();
+            
+            pstmt.setInt(1, 3); pstmt.setInt(2, 103); pstmt.setString(3, "Tablet"); pstmt.setDouble(4, 25000);
+            pstmt.executeUpdate();
+            
+            System.out.println("Records inserted successfully.\n");
+            
+            // Display all products
+            String selectQuery = "SELECT * FROM product";
+            PreparedStatement selectStmt = con.prepareStatement(selectQuery);
+            ResultSet rs = selectStmt.executeQuery();
+            
+            System.out.println("SerialNo\tProductNo\tProductName\tPrice");
+            System.out.println("-------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("product_no") + "\t\t" +
+                                   rs.getString("product_name") + "\t\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            rs.close();
+            pstmt.close();
+            selectStmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image21.png" alt="Product Table Output" class="step-image">
+                                    <div class="image-caption">Output showing product table data</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 5 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 5</span>
+                                <h4>Delete Department Using CallableStatement</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(255),
+    city VARCHAR(255)
+);
+
+INSERT INTO Department VALUES
+(1, 'HR', 'New York'),
+(2, 'Finance', 'London'),
+(3, 'IT', 'Sydney');
+
+DELIMITER //
+CREATE PROCEDURE delete_department(IN deptId INT)
+BEGIN
+    DELETE FROM Department WHERE dept_id = deptId;
+END //
+DELIMITER ;</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            
+            CallableStatement cstmt = con.prepareCall("{call delete_department(?)}");
+            cstmt.setInt(1, 2); // Department ID to delete
+            int rowsDeleted = cstmt.executeUpdate();
+            System.out.println(rowsDeleted + " department(s) deleted.");
+            
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Department");
+            System.out.println("\nDeptID\tDeptName\tCity");
+            System.out.println("----------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("dept_id") + "\t" +
+                                   rs.getString("dept_name") + "\t" +
+                                   rs.getString("city"));
+            }
+            
+            rs.close();
+            stmt.close();
+            cstmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image23.png" alt="Department Delete Output" class="step-image">
+                                    <div class="image-caption">Output showing department deletion</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 6 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 6</span>
+                                <h4>CRUD Operations on Books Table</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> Inserts, reads, updates, and deletes records from Books table using Statement.
+                                </div>
+                                
+                                <div class="sql-setup">
+                                    <h5>🗄️ SQL Setup:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-sql">CREATE TABLE Books (
+    serial_no INT PRIMARY KEY,
+    book_no INT,
+    book_name VARCHAR(255),
+    price DOUBLE
+);</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package employee;
+import java.sql.*;
+
+public class Employee {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/238w1a1275";
+        String user = "root";
+        String password = "";
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+            
+            // INSERT Operation
+            stmt.executeUpdate("INSERT INTO Books VALUES (3, 103, 'Data Structures', 450.0)");
+            System.out.println("Record inserted.");
+            
+            // SELECT Operation
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Books");
+            System.out.println("\nSerialNo\tBookNo\tBookName\t\tPrice");
+            System.out.println("---------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("book_no") + "\t" +
+                                   rs.getString("book_name") + "\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            // UPDATE Operation
+            stmt.executeUpdate("UPDATE Books SET price = 550.0 WHERE serial_no = 1");
+            System.out.println("\nRecord updated.");
+            
+            // DELETE Operation
+            stmt.executeUpdate("DELETE FROM Books WHERE serial_no = 2");
+            System.out.println("Record deleted.");
+            
+            // Final SELECT
+            rs = stmt.executeQuery("SELECT * FROM Books");
+            System.out.println("\nFinal Table:");
+            System.out.println("SerialNo\tBookNo\tBookName\t\tPrice");
+            System.out.println("---------------------------------------------------");
+            while (rs.next()) {
+                System.out.println(rs.getInt("serial_no") + "\t\t" +
+                                   rs.getInt("book_no") + "\t" +
+                                   rs.getString("book_name") + "\t" +
+                                   rs.getDouble("price"));
+            }
+            
+            rs.close();
+            stmt.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Final Result -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <div class="image-container">
+                                    <img src="images/image24.png" alt="All Programs Success" class="step-image">
+                                    <div class="image-caption">All CRUD programs executed successfully</div>
+                                </div>
+                                <div class="success-message">
+                                    <strong>All CRUD Operations Completed Successfully!</strong><br>
+                                    ✓ Statement-based CRUD operations<br>
+                                    ✓ PreparedStatement implementations<br>
+                                    ✓ CallableStatement with stored procedures<br>
+                                    ✓ Multiple table operations<br>
+                                    ✓ Complete database connectivity demonstrated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

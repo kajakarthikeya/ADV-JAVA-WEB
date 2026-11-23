@@ -1,0 +1,30 @@
+dir -p ~/Downloads/ucanaccess.</div><div class="ss-actions"><button class="ss-btn ss-replace-btn">📷 Replace</button><a href="../assets/images/week-3/week3_step_1.png" download class="ss-btn ss-download-btn">⬇ Download</a><input type="file" class="ss-file-input" accept="image/*" /></div></div>
+            </div>
+            <div class="ss-card">
+              <div class="ss-card-header"><span class="ss-step-badge">Step 2</span><span class="ss-counter-badge">[2 / 9]</span></div>
+              <div
+==================================================
+nAccess package and libraries.</div><div class="ss-actions"><button class="ss-btn ss-replace-btn">📷 Replace</button><a href="../assets/images/week-3/week3_step_2.png" download class="ss-btn ss-download-btn">⬇ Download</a><input type="file" class="ss-file-input" accept="image/*" /></div></div>
+            </div>
+            <div class="ss-card">
+              <div class="ss-card-header"><span class="ss-step-badge">Step 3</span><span class="ss-counter-badge">[3 / 9]</span></div>
+              <div
+==================================================
+hsqldb, and commons libraries.</div><div class="ss-actions"><button class="ss-btn ss-replace-btn">📷 Replace</button><a href="../assets/images/week-3/week3_step_3.png" download class="ss-btn ss-download-btn">⬇ Download</a><input type="file" class="ss-file-input" accept="image/*" /></div></div>
+            </div>
+            <div class="ss-card">
+              <div class="ss-card-header"><span class="ss-step-badge">Step 4</span><span class="ss-counter-badge">[4 / 9]</span></div>
+              <div
+==================================================
+nal cd ~/Downloads/ucanaccess.</div><div class="ss-actions"><button class="ss-btn ss-replace-btn">📷 Replace</button><a href="../assets/images/week-3/week3_step_4.png" download class="ss-btn ss-download-btn">⬇ Download</a><input type="file" class="ss-file-input" accept="image/*" /></div></div>
+            </div>
+            <div class="ss-card">
+              <div class="ss-card-header"><span class="ss-step-badge">Step 5</span><span class="ss-counter-badge">[5 / 9]</span></div>
+              <div
+==================================================
+java database connection code.</div><div class="ss-actions"><button class="ss-btn ss-replace-btn">📷 Replace</button><a href="../assets/images/week-3/week3_step_5.png" download class="ss-btn ss-download-btn">⬇ Download</a><input type="file" class="ss-file-input" accept="image/*" /></div></div>
+            </div>
+            <div class="ss-card">
+              <div class="ss-card-header"><span class="ss-step-badge">Step 6</span><span class="ss-counter-badge">[6 / 9]</span></div>
+              <div
+==================================================

@@ -1,0 +1,59 @@
+Comprehensive Q&A</a>
+          <a href="#result" class="toc-item">8. Conclusion</a>
+        </nav>
+      </aside>
+
+      <article class="topic-main">
+        <section class="content-section" id="aim">
+          <h2 class="content-section-title"><span class="section-icon">🎯</span> 1. Aim</h2>
+          <p>
+            To investigate, evaluate, and document the foundational architectural differences between Core Java (Java SE) and Advanced Java (Jakarta EE), examining server-side component lifecycles, database access drivers (JDBC vs ODBC), stateless HTTP tracking mechanisms (Cookies vs Sessions), and standalone desktop versus distributed enterprise web paradigms.
+          </p>
+        </section>
+
+        <section class="content-section" id="requirements">
+          <h2 class="content-section-title"><span class="section-icon">⚙️</span> 2. Hardware &amp; Software Requirements</h2>
+          <div class="req-grid">
+            <div class="req-card">
+              <div class="req-card-title">💻 Software Platform</div>
+              <div class="req-list">
+                <div class="req-item"><span class="req-item-dot"></span>JDK: Java SE Development Kit 8 / 17 / 26</div>
+                <div class="req-item"><span class="req-item-dot"></span>Web Container: Apache Tomcat 8.5+ / 9.0+ / GlassFish</div>
+                <div class="req-item"><span class="req-item-dot"></span>IDE: NetBeans IDE 8.2 / Spring Tool Suite 4</div>
+                <div class="req-item"><span class="req-item-dot"></span>Browser: Modern standards-compliant browser</div>
+              </div>
+            </div>
+            <div class="req-card">
+              <div class="req-card-title">🖥️ Hardware Configuration</div>
+              <div class="req-list">
+                <div class="req-item"><span class="req-item-dot"></span>Processor: Intel Core i5 / AMD Ryzen 5 or higher</div>
+                <div class="req-item"><span class="req-item-dot"></span>RAM: 8 GB minimum (16 GB recommended for enterprise containers)</div>
+                <div class="req-item"><span class="req-item-dot"></span>Storage: 20 GB available SSD storage</div>
+                <div class="req-item"><span class="req-item-dot"></span>Network: Localhost TCP/IP networking stack</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="procedure">
+          <h2 class="content-section-title"><span class="section-icon">🔧</span> 3. Step-by-Step Theoretical Procedure</h2>
+          <div class="timeline-procedure">
+            <div class="timeline-step">
+              <div class="timeline-marker">1</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🏛️</div><div class="timeline-title">Step 1: Evaluate Core Java vs Advanced Java</div></div>
+                <div class="timeline-desc">Analyze Java SE client-side runtime boundaries versus Jakarta EE distributed enterprise server architectures, contrasting monolithic desktop execution with multi-tiered client-server topologies.</div>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">2</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🌐</div><div class="timeline-title">Step 2: Compare Applet Sunsetting &amp; Servlet Emergence</div></div>
+                <div class="timeline-desc">Document browser NPAPI plugin deprecation, evaluating why client-side Applets were superseded by robust, high-performance server-side Java Servlets.</div>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">3</div>
+              <div class="timeline-card">
+                <div class="timeline-header"><div class="timeline-icon">🔌</div><div class="timeline-title">Step 3: Database Connectivity Architecture (JDBC vs ODBC)</div></div>
+          

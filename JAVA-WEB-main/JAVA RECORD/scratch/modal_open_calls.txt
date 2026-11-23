@@ -1,0 +1,32 @@
+.\script.js:63: const isOpen = mobileNav.classList.toggle('open');
+.\script.js:70: mobileNav.classList.remove('open');
+.\script.js:446: modal.classList.add('open');
+.\script.js:449: const closeModal = () => modal.classList.remove('open');
+.\script.js:460: if (!modal.classList.contains('open')) return;
+.\script.js:585: sidebar.classList.toggle('open');
+.\script.js:589: if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== toggleBtn) {
+.\script.js:590: sidebar.classList.remove('open');
+.\script.js:613: g.classList.add('active', 'open');
+.\script.js:616: g.classList.remove('open');
+.\script.js:631: if (sidebar && sidebar.classList.contains('open')) {
+.\script.js:632: sidebar.classList.remove('open');
+.\script.js:773: group.classList.add('open');
+.\script.js:803: modal.classList.add('open');
+.\script.js:814: modal.classList.remove('open');
+.\script.js:820: if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+.\JAVA-WEB-main\script.js:63: const isOpen = mobileNav.classList.toggle('open');
+.\JAVA-WEB-main\script.js:70: mobileNav.classList.remove('open');
+.\JAVA-WEB-main\script.js:446: modal.classList.add('open');
+.\JAVA-WEB-main\script.js:449: const closeModal = () => modal.classList.remove('open');
+.\JAVA-WEB-main\script.js:460: if (!modal.classList.contains('open')) return;
+.\JAVA-WEB-main\script.js:585: sidebar.classList.toggle('open');
+.\JAVA-WEB-main\script.js:589: if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== toggleBtn) {
+.\JAVA-WEB-main\script.js:590: sidebar.classList.remove('open');
+.\JAVA-WEB-main\script.js:613: g.classList.add('active', 'open');
+.\JAVA-WEB-main\script.js:616: g.classList.remove('open');
+.\JAVA-WEB-main\script.js:631: if (sidebar && sidebar.classList.contains('open')) {
+.\JAVA-WEB-main\script.js:632: sidebar.classList.remove('open');
+.\JAVA-WEB-main\script.js:773: group.classList.add('open');
+.\JAVA-WEB-main\script.js:803: modal.classList.add('open');
+.\JAVA-WEB-main\script.js:814: modal.classList.remove('open');
+.\JAVA-WEB-main\script.js:820: if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();

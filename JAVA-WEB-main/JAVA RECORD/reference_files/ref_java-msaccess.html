@@ -1,0 +1,172 @@
+<section id="java-msaccess" class="lab-section">
+                <h3>🔗 Java & MS Access Connections without DSN</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn how to establish a connection between Java and MS Access database without using DSN (Data Source Name). This method uses UCanAccess driver for direct database connectivity.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create a New Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Open your IDE and create a new Java project to start working with Java and MS Access connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image1.png" alt="Creating New Project" class="step-image">
+                                    <div class="image-caption">Creating a new Java project in IDE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Select Java for Standalone Applications</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Choose the "Java" option for a standalone application to ensure it runs independently on your system.</p>
+                                <div class="image-container">
+                                    <img src="images/image2.png" alt="Selecting Java Application" class="step-image">
+                                    <div class="image-caption">Selecting Java for standalone applications</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Name of the Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Give a meaningful name to your project for easy identification (e.g., JavaAccessConnection).</p>
+                                <div class="image-container">
+                                    <img src="images/image3.png" alt="Naming the Project" class="step-image">
+                                    <div class="image-caption">Providing a meaningful project name</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Project Page Displayed</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Once the project is created, the IDE displays the project structure including source folders, libraries, and other components.</p>
+                                <div class="image-container">
+                                    <img src="images/image4.png" alt="Project Structure" class="step-image">
+                                    <div class="image-caption">Project structure with folders and components</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Right-click on Libraries in the project tree and add the necessary JAR files (like UCanAccess or jdbc-odbc driver) to enable MS Access connectivity.</p>
+                                <div class="image-container">
+                                    <img src="images/image5.png" alt="Adding Libraries" class="step-image">
+                                    <div class="image-caption">Adding UCanAccess JAR files to project libraries</div>
+                                </div>
+                                <div class="info-box">
+                                    <h5>📚 Required Libraries:</h5>
+                                    <ul>
+                                        <li>UCanAccess-5.0.1.jar</li>
+                                        <li>commons-lang3-3.8.1.jar</li>
+                                        <li>commons-logging-1.2.jar</li>
+                                        <li>hsqldb-2.5.0.jar</li>
+                                        <li>jackcess-3.0.1.jar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">6</div>
+                                <h4>Run the Program</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Create and execute the Java program to establish connection with MS Access database.</p>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">package Test;
+import java.sql.*;
+import java.util.*;
+
+public class Test {
+    public static void main(String args[]) {
+        try {
+            // Load UCanAccess JDBC Driver
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+            
+            // Establish connection to MS Access database
+            Connection con = DriverManager.getConnection(
+                "jdbc:ucanaccess://D:\\vrsec.accdb"
+            );
+            
+            // Create statement object
+            Statement st = con.createStatement();
+            
+            // Execute query to fetch data from 'it' table
+            ResultSet rs = st.executeQuery("select * from it");
+            
+            // Process the result set
+            while(rs.next()) {
+                System.out.println("emp Number is: " + rs.getInt(1));
+                System.out.println("emp name is: " + rs.getString(2));
+            }
+            
+            // Close connections
+            rs.close();
+            st.close();
+            con.close();
+            
+        } catch(Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <p>Click the green Run button to compile and execute the program. The output will show whether the connection to MS Access was successful.</p>
+                                
+                                <div class="image-container">
+                                    <img src="images/image6.png" alt="Program Execution" class="step-image">
+                                    <div class="image-caption">Program execution and output display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <p>Code executed successfully and the result displayed employee numbers and names from the MS Access database table.</p>
+                                <div class="success-message">
+                                    <strong>Connection Established Successfully!</strong><br>
+                                    The Java application successfully connected to MS Access database without DSN and retrieved data from the 'it' table.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

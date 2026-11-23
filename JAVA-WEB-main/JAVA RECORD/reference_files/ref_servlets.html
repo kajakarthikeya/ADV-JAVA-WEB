@@ -1,0 +1,535 @@
+<section id="servlets" class="lab-section">
+                <h3>🌐 Java Servlets Implementation</h3>
+                
+                <div class="tutorial-container">
+                    <div class="tutorial-intro">
+                        <p>Learn to run different servlets and implement real-life examples using Java Servlets. This comprehensive tutorial covers servlet creation, configuration, and practical applications.</p>
+                    </div>
+
+                    <div class="crud-aim">
+                        <h4>🎯 AIM:</h4>
+                        <p>To run different servlets and to implement real life examples using servlets</p>
+                    </div>
+
+                    <div class="servlet-setup">
+                        <h4>🚀 Steps to Run a Servlet</h4>
+                        
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h4>Create Web Application Project</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on File → New Project → Java Web → Web Application</li>
+                                    <li>Click Next</li>
+                                    <li>Click Next</li>
+                                    <li>Click Next and follow the default settings of the project</li>
+                                    <li>Leave it without making any changes</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image33.png" alt="Web Application Creation Step 1" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 1</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image34.png" alt="Web Application Creation Step 2" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 2</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image35.png" alt="Web Application Creation Step 3" class="step-image">
+                                    <div class="image-caption">Creating new web application project - Step 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h4>Create Servlet Class</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on Servlet → Give servlet class name</li>
+                                    <li>Name the servlet and click finish</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image36.png" alt="Servlet Creation Step 1" class="step-image">
+                                    <div class="image-caption">Creating new servlet class - Step 1</div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image37.png" alt="Servlet Creation Step 2" class="step-image">
+                                    <div class="image-caption">Creating new servlet class - Step 2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h4>Add Required Libraries</h4>
+                            </div>
+                            <div class="step-content">
+                                <div class="setup-list">
+                                    <li>Click on Libraries → Add JAR File → com.mysql.jdbc_5.1.5</li>
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/image38.png" alt="Adding Libraries" class="step-image">
+                                    <div class="image-caption">Adding MySQL JDBC library to project</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">4</div>
+                                <h4>Configure web.xml</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Add the servlet information to the web.xml file</p>
+                                <div class="image-container">
+                                    <img src="images/image39.png" alt="Web.xml Configuration" class="step-image">
+                                    <div class="image-caption">Configuring servlet in web.xml file</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">5</div>
+                                <h4>Add Servlet Code and Run</h4>
+                            </div>
+                            <div class="step-content">
+                                <p>Add the code related to servlet and run the file to get the desired output.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="programs-container">
+                        <h4>💻 Servlet Programs</h4>
+
+                        <!-- Program 1 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 1</span>
+                                <h4>Simple HTTP Servlet - Hello World</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple HTTP servlet that displays "Hello"
+                                </div>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HelloServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        // Set content type
+        response.setContentType("text/html");
+        
+        // Print "Hello"
+        PrintWriter out = response.getWriter();
+        out.println("<h1>Hello</h1>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image40.png" alt="Hello Servlet Output" class="step-image">
+                                    <div class="image-caption">Output showing Hello message from servlet</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 2 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 2</span>
+                                <h4>Generic Servlet Implementation</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple generic servlet that prints a simple text
+                                </div>
+                                
+                                <div class="code-section">
+                                    <h5>💻 Java Code:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class HelloGenericServlet extends GenericServlet {
+    @Override
+    public void service(ServletRequest request, ServletResponse response)
+            throws ServletException, IOException {
+        
+        // Set content type
+        response.setContentType("text/html");
+        
+        // Print "Hello"
+        PrintWriter out = response.getWriter();
+        out.println("<h1>Hello from GenericServlet</h1>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image41.png" alt="Generic Servlet Output" class="step-image">
+                                    <div class="image-caption">Output from Generic Servlet implementation</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 3 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 3</span>
+                                <h4>HTML Form with Servlet - Two Input Values</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple program that takes 2 input values from the user using HTML form and sends the values to the servlet and then displays the 2 values
+                                </div>
+                                
+
+
+                                <div class="code-section">
+                                    <h5>💻 DisplayServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DisplayServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        // Get values from form
+        String v1 = request.getParameter("value1");
+        String v2 = request.getParameter("value2");
+        
+        // Set response type
+        response.setContentType("text/html");
+        
+        // Print values
+        PrintWriter out = response.getWriter();
+        out.println("<h2>You Entered:</h2>");
+        out.println("<p>Value 1: " + v1 + "</p>");
+        out.println("<p>Value 2: " + v2 + "</p>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image42.png" alt="Two Input Form Output" class="step-image">
+                                    <div class="image-caption">Form input and servlet response display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 4 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 4</span>
+                                <h4>Database Insert with Authentication</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a simple program that takes username and password from user, prints success if correct, and inserts into database
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image43.png" alt="Insert Form" class="step-image">
+                                    <div class="image-caption">Username and password input form</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 InsertServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.sql.*;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InsertServlet extends HttpServlet {
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
+            response.setContentType("text/html;charset=UTF-8");
+            PrintWriter out = response.getWriter();
+            out.println("success");
+            
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jdbc:mysql://localhost/db";
+            String username = "root";
+            String password = "";
+            Connection con = DriverManager.getConnection(url, username, password);
+            out.println("success1");
+            
+            String un1 = request.getParameter("un");
+            String pw1 = request.getParameter("pw");
+            String sql = "INSERT INTO login(username, password) VALUES('" + un1 + "','" + pw1 + "')";
+            out.println("success2");
+            
+            Statement st = con.createStatement();
+            out.println("success3");
+            int n = st.executeUpdate(sql);
+            out.println("success3");
+            
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet NewServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>no. Rows inserted are " + n + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        } catch (Exception E) {
+            E.getMessage();
+        }
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image44.png" alt="Database Insert Output" class="step-image">
+                                    <div class="image-caption">Database insertion success message</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 5 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 5</span>
+                                <h4>Pizza Order Form with Servlet</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a program that takes input from user for Pizza order and displays the output for the options user has chosen using servlet
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image45.png" alt="Pizza Order Form" class="step-image">
+                                    <div class="image-caption">Pizza order form with various input options</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 OrderServlet1.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/order1")
+public class OrderServlet1 extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        
+        // Read parameters from the request
+        String name = request.getParameter("name");
+        String crust = request.getParameter("crust");
+        String[] toppings = request.getParameterValues("toppings");
+        String appetizer = request.getParameter("appetizer");
+        String address = request.getParameter("address");
+        String cardType = request.getParameter("cardType");
+        String cardNumber = request.getParameter("cardNumber");
+        String confirmCardNumber = request.getParameter("confirmCardNumber");
+        
+        // Basic validation for card number match
+        if (cardNumber == null || !cardNumber.equals(confirmCardNumber)) {
+            out.println("<h3>Credit card numbers do not match. Please go back and try again.</h3>");
+            return;
+        }
+        
+        // Start printing the order details in table format
+        out.println("<html><head><title>Your Order</title></head><body>");
+        out.println("<h2>Your Order...</h2>");
+        out.println("<table border='1' cellpadding='5'>");
+        
+        // Print parameter name and value rows
+        printRow(out, "submit", "Order Pizza");
+        printRow(out, "address", address);
+        printRow(out, "name", name);
+        printRow(out, "appetizer", appetizer);
+        printRow(out, "cardType", cardType);
+        printRow(out, "crust", crust);
+        
+        // Print card number as bullet points
+        out.print("<tr><td>cardNum</td><td><ul>");
+        for (int i = 0; i < cardNumber.length(); i += 5) {
+            int end = Math.min(i + 5, cardNumber.length());
+            out.print("<li>" + cardNumber.substring(i, end) + "</li>");
+        }
+        out.println("</ul></td></tr>");
+        
+        // Print toppings as list
+        out.print("<tr><td>toppings</td><td><ul>");
+        if (toppings != null) {
+            for (String topping : toppings) {
+                out.print("<li>" + topping + "</li>");
+            }
+        }
+        out.println("</ul></td></tr>");
+        out.println("</table>");
+        out.println("</body></html>");
+    }
+    
+    private void printRow(PrintWriter out, String paramName, String paramValue) {
+        out.println("<tr>");
+        out.println("<td>" + paramName + "</td>");
+        out.println("<td>" + paramValue + "</td>");
+        out.println("</tr>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image46.png" alt="Pizza Order Output" class="step-image">
+                                    <div class="image-caption">Pizza order confirmation with selected options</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program 6 -->
+                        <div class="program-card">
+                            <div class="program-header">
+                                <span class="program-number">Program 6</span>
+                                <h4>Login Authentication Servlet</h4>
+                            </div>
+                            <div class="program-content">
+                                <div class="objective">
+                                    <strong>Objective:</strong> To create a program that takes username and password from user, checks if they are correct, and prints welcome message or error message using servlets
+                                </div>
+                                
+
+
+                                <div class="image-container">
+                                    <img src="images/image47.png" alt="Login Form" class="step-image">
+                                    <div class="image-caption">Login form for authentication</div>
+                                </div>
+
+                                <div class="code-section">
+                                    <h5>💻 LoginServlet.java:</h5>
+                                    <div class="code-container">
+                                        <pre><code class="language-java">import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    // Hardcoded username and password for demo
+    private final String USERNAME = "admin";
+    private final String PASSWORD = "password123";
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        
+        // Get username and password from form
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        
+        response.setContentType("text/html");
+        
+        if (USERNAME.equals(username) && PASSWORD.equals(password)) {
+            // Credentials are correct — print welcome message
+            response.getWriter().println("<h1>Welcome, " + username + "!</h1>");
+        } else {
+            // Credentials are incorrect — print error message
+            response.getWriter().println("<h3>Invalid username or password. Please try again.</h3>");
+            response.getWriter().println("<a href='login.html'>Go back to Login</a>");
+        }
+    }
+    
+    // Optional: show the login form on GET request
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        response.getWriter().println("<form method='POST' action='login'>");
+        response.getWriter().println("Username: <input type='text' name='username' /><br/>");
+        response.getWriter().println("Password: <input type='password' name='password' /><br/>");
+        response.getWriter().println("<input type='submit' value='Login' />");
+        response.getWriter().println("</form>");
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="images/image48.png" alt="Login Success/Error" class="step-image">
+                                    <div class="image-caption">Login authentication result display</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-icon">✅</span>
+                                <h4>Result</h4>
+                            </div>
+                            <div class="result-content">
+                                <div class="success-message">
+                                    <strong>All Servlet Programs Executed Successfully!</strong><br>
+                                    ✓ Web application project created<br>
+                                    ✓ HTTP and Generic servlets implemented<br>
+                                    ✓ HTML forms integrated with servlets<br>
+                                    ✓ Database operations performed<br>
+                                    ✓ Real-life examples (Pizza order, Login) completed<br>
+                                    ✓ Request parameters handling demonstrated
+                                </div>
+                                <p>The codes executed successfully and different servlets with real-life examples have been implemented.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

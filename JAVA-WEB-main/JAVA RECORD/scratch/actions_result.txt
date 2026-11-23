@@ -1,0 +1,34 @@
+=== build_perfect_record.py (17 matches) ===
+  277: <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  282: <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+  297: <a href="../index.html#downloads" class="btn btn-secondary btn-sm" style="color:#F8FAFC;border-color:#334155;">⬇ All Downloads</a>
+  372: downloads_section = """
+  374: <section class="task-section" id="downloads" style="margin-top:48px;">
+  385: <a href="assets/downloads/AccessDemo.java" download class="step-btn">⬇ Download .java</a>
+  390: <a href="assets/downloads/StudentCRUD.java" download class="step-btn">⬇ Download .java</a>
+  395: <a href="assets/downloads/NewServlet.java" download class="step-btn">⬇ Download .java</a>
+  400: <a href="assets/downloads/GetPostServlet.java" download class="step-btn">⬇ Download .java</a>
+  405: <a href="assets/downloads/AuthorService.java" download class="step-btn">⬇ Download .java</a>
+  410: <a href="assets/downloads/EmployeeRepository.java" download class="step-btn">⬇ Download .java</a>
+  415: <a href="assets/downloads/StudentRepository.java" download class="step-btn">⬇ Download .java</a>
+  420: <a href="assets/documents/ADVANCED_JAVA_SERVLET_RECORD_24EU08161.docx" download class="step-btn">⬇ Download Docx</a>
+  470: {downloads_section}
+  481: <a href="#" download id="ssModalDownload" class="btn btn-secondary btn-sm">⬇ Download Full-Res</a>
+  486: <img src="" alt="Fullscreen screenshot" id="ssModalImg" />
+  501: <a href="#downloads" class="btn btn-secondary btn-sm" style="color:#F8FAFC;border-color:#334155;">⬇ All Downloads</a>
+=== build_sidebar_helpers.py (4 matches) ===
+  184: <a href="{root_prefix}index.html#downloads" class="header-tool-btn">⬇ Downloads</a>
+  264: <div class="step-card-actions">
+  265: <button class="step-btn ss-zoom-trigger">🔍 Fullscreen</button>
+  266: <a href="{full_img_path}" download class="step-btn">⬇ Download</a>
+=== style.css (6 matches) ===
+  217: section, #about, #topics, #screenshots, #downloads, #contact, #hero {
+  231: #about h2, #topics h2, #screenshots h2, #downloads h2, #contact h2,
+  232: #about h3, #topics h3, #screenshots h3, #downloads h3, #contact h3 {
+  1641: .step-card-actions {
+  1647: .step-btn {
+  1660: .step-btn:hover {
+=== script.js (3 matches) ===
+  346: document.querySelectorAll('.ss-replace-btn').forEach(btn => {
+  378: document.querySelectorAll('.ss-download-btn').forEach(btn => {
+  783: document.querySelectorAll('.step-img-wrap, .ss-zoom-trigger, .ss-img-wrap, .proof-card').forEach(el => {
