@@ -1,0 +1,9 @@
+﻿{
+  "rewrites": [
+    { "source": "/24EU08161", "destination": "/24EU08161.html" },
+    { "source": "/JAVA-WEB-main/24EU08161.html", "destination": "/24EU08161.html" },
+    { "source": "/JAVA-WEB-main/JAVA%20RECORD/(.*)", "destination": "/$1" },
+    { "source": "/JAVA-WEB-main/JAVA RECORD/(.*)", "destination": "/$1" },
+    { "source": "/JAVA-WEB-main/(.*)", "destination": "/$1" }
+  ]
+}
